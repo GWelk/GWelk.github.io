@@ -1,6 +1,6 @@
 # GWelk.github.io
 
-Are you reading me? Cool! That's what my Readme file is for!
+Are you reading me? Cool! That's what this *Readme file* is for!
 I'm so excited to be doing this - I haven't coded in so long!!
 
 Wise words from **Betty White:**
