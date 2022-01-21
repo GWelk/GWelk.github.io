@@ -3,24 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>About Gena | Hello Me</title>
+    <style>
+      .item1 { grid-area: header; }
+      .item2 { grid-area: menu; }
+      .item3 { grid-area: main; }
+      .item4 { grid-area: right; }
+      .item5 { grid-area: footer; }
+
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          'menu header header header right right'
+          'menu main main main right right'
+          'menu footer footer footer right right';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
   </head>
 
   <body>
-    <table border="0">
-      <tr>
-        <td>Gena Welk
-        </td>
-      </tr>
-      <tr>
-        <td><h1>Gena Welk</h1>
-        </td>
-      </tr>
-      
-      <tr>
-        <td>she/her/hers
-        </td>
-      </tr>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nj85L2r171w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <p>This grid layout contains six columns and three rows:</p>
+
+    <div class="grid-container">
+      <div class="item1">Gena</div>
+      <div class="item2"><img src="img/Self_img_2014.jpg" width="200"></div>
+      <div class="item3">info and details</div>
+      <div class="item4">Right</div>
+      <div class="item5"><iframe width="560" height="315" src="https://www.youtube.com/embed/nj85L2r171w" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+
+    
+<a href="https://www.youtube.com/embed/nj85L2r171w" target="_blank">click me</a>
   </body>
 </html>
