@@ -3,56 +3,147 @@
   <head>
     <meta charset="utf-8">
     <title>Cacao! by Gena</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&Noto+Sans">
+    <style>
+      body {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 22px;
+      }
+
+      h1 {
+        font-family: "Oswald", sans-serif;
+        font-size: 52px;
+      }
+
+      h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 40px;
+        text-align: left;
+      }
+
+      h4 {
+        font-family: "Oswald", sans-serif;
+        font-size: 25px;
+        text-align: left;
+      }
+
+      p {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 22px;
+        text-align: left;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+
+      li {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 18px;
+        text-align: left;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 5% 15% 45% 20% auto;
+        /*ackground-color: #2196F3;*/
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 0px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+
+
+    </style>
   </head>
 
   <body>
+    <div class="grid-container">
+      <div class="grid-item" id="1"></div>
+      <div class="grid-item" id="2"></div>
+      <div class="grid-item" id="3"></div>
+      <div class="grid-item" id="4"></div>
+      <div class="grid-item" id="5"></div>
+      <div class="grid-item" id="6"></div>
+      <div class="grid-item" id="TOC" style="background-color:#f9f9f9;border:2px solid #aaa;color:#000">Table of Contents<hr>
+        <p><a href="#about">About</a></p>
+        <p><a href="#difference">Cacao vs. Cocoa</a></p>
+        <p><a href="#varieties">Varieties</a></p>
+        <p><a href="#peers">Classmates' Pages</a></p>
+      </div>
 
-    <h1>Cacao</h1>
-    <img src="/img/cacaopods.jpg" alt="Cacao pods" height="300">
+      <div class="grid-item">
+        <h1>Cacao</h1>
 
-    <section id="TOC">
-      <h2>About</h2>
-      Theobroma cacao, also called the cacao tree and the cocoa tree, is a small (4–8 m (13–26 ft) tall) evergreen tree in the family Malvaceae.[1][2] Its seeds, cocoa beans, are used to make chocolate liquor, cocoa solids, cocoa butter and chocolate.[3] The largest producer of cocoa beans in 2018 was Ivory Coast, with 37% of the world total.
-      <!--https://en.wikipedia.org/wiki/Theobroma_cacao-->
-    </section>
 
-    <section id="difference">
-      <h2>How is cacao different from cocoa?</h2>
-      Despite coming from the same plant, cacao and cocoa have numerous differences. Cacao is a pure form of chocolate that comes very close to the raw and natural state in which it is harvested (One Green Planet, n.d.). While the natural nature of cacao would seem to limit its versatility, the product actually comes in several forms.
-      <!--https://nuts.com/healthy-eating/cacao-vs-cocoa-->
-    </section>
+        <section id="about">
+          <h2>About</h2>
+          <img src="/img/cacaopods.jpg" alt="Cacao pods" height="300" style="float:right;margin:0px 50px">
+          <p>Theobroma cacao, also called the cacao tree and the cocoa tree, is a small (4–8 m (13–26 ft) tall) evergreen tree in the family Malvaceae.[1][2] Its seeds, cocoa beans, are used to make chocolate liquor, cocoa solids, cocoa butter and chocolate.[3] The largest producer of cocoa beans in 2018 was Ivory Coast, with 37% of the world total.
+          </p>
+          <!--https://en.wikipedia.org/wiki/Theobroma_cacao-->
+          <a href=#TOC><p style="text-align: left; font-size: 18px">(Return to top)</p></a>
+        </section>
 
-    <section id="varieties">
-      <h2>Varieties</h2>
-      The three main varieties of cocoa plant are Forastero, Criollo, and Trinitario. The first is the most widely used, comprising 80–90% of the world production of cocoa. Cocoa beans of the Criollo variety are rarer and considered a delicacy.[15][16] Criollo also tend to be less resistant to several diseases that attack the cocoa plant, hence very few countries still produce it. One of the largest producers of Criollo beans is Venezuela (Chuao and Porcelana). Trinitario (from Trinidad) is a hybrid between Criollo and Forastero varieties. It is considered to be of much higher quality than Forastero, has higher yields, and is more resistant to disease than Criollo.[16]
-      <!-- https://en.wikipedia.org/wiki/Cocoa_bean -->
-    </section>
+        <section id="difference">
+          <h2>How is cacao different from cocoa?</h2>
+          <p>Despite coming from the same plant, cacao and cocoa have numerous differences. Cacao is a pure form of chocolate that comes very close to the raw and natural state in which it is harvested (One Green Planet, n.d.). While the natural nature of cacao would seem to limit its versatility, the product actually comes in several forms.
+          </p>
+          <!--https://nuts.com/healthy-eating/cacao-vs-cocoa-->
+          <a href=#TOC><p style="text-align: left; font-size: 18px">(Return to top)</p></a>
+        </section>
 
-    <section id="cultures">
-    </section>
+        <section id="varieties">
+          <h2>Varieties</h2>
+          <p>The three main varieties of cocoa plant are Forastero, Criollo, and Trinitario. The first is the most widely used, comprising 80–90% of the world production of cocoa. Cocoa beans of the Criollo variety are rarer and considered a delicacy.[15][16] Criollo also tend to be less resistant to several diseases that attack the cocoa plant, hence very few countries still produce it. One of the largest producers of Criollo beans is Venezuela (Chuao and Porcelana). Trinitario (from Trinidad) is a hybrid between Criollo and Forastero varieties. It is considered to be of much higher quality than Forastero, has higher yields, and is more resistant to disease than Criollo.[16]
+          </p><!-- https://en.wikipedia.org/wiki/Cocoa_bean -->
+          <a href=#TOC><p style="text-align: left; font-size: 18px">(Return to top)</p></a>
+        </section>
 
-    <section id="parts">
+        <section id="cultures">
+        </section>
 
-    </section>
+        <section id="parts">
 
-    <section id="peers">
-      <h2>Related Links</h2>
-      <h4>Classmates' Pages</h4>
-      <ul>
-        <li><a href="https://zacharyjbaker.github.io/assignment3.html">Zach:</a> Chicken Parmigiana</li>
-        <li><a href="https://serenchappy.github.io/assignment3.html">Seren:</a> Grapefruit</li>
-        <li><a href="https://jagreer7.github.io/assignment3">Jackson:</a> Ramen Noodles</li>
-        <li><a href="https://tarynmh.github.io/assignment3.html">Taryn:</a> Matcha</li>
-        <li><a href="https://jihu1222.github.io/assignment3.html">Kai:</a> Funny Drink</li>
-        <li><a href="https://jamjoung.github.io/assignment3.html">Jamie:</a> Tofu</li>
-        <li><a href="https://nima3221.github.io/assignment_3.html">Nikhil:</a> Cookie</li>
-        <li><a href="">Jack:</a> </li>
-        <li><a href="https://christopherschutte.github.io/assignment3/">Chris:</a> Ice Cream</li>
-        <li><a href="">Logan:</a> </li>
-        <li><a href="https://github.com/aism1562/recitation-013/blob/main/assignment_3.html">Aiden:</a> Wonder Bread</li>
-        <li><a href="https://kadeeisen.github.io/assignment3.html">Kade:</a> British Food</li>
-      </ul>
-    </section>
+        </section>
+
+        <section id="peers">
+          <h2>See also...</h2>
+          <h4>Classmates' Pages:</h4>
+
+          <ul>
+            <li><a href="https://zacharyjbaker.github.io/assignment3.html">Zach:</a> Chicken Parmigiana</li>
+            <li><a href="https://serenchappy.github.io/assignment3.html">Seren:</a> Grapefruit</li>
+            <li><a href="https://jagreer7.github.io/assignment3">Jackson:</a> Ramen Noodles</li>
+            <li><a href="https://tarynmh.github.io/assignment3.html">Taryn:</a> Matcha</li>
+            <li><a href="https://jihu1222.github.io/assignment3.html">Kai:</a> Funny Drink</li>
+            <li><a href="https://jamjoung.github.io/assignment3.html">Jamie:</a> Tofu</li>
+            <li><a href="https://nima3221.github.io/assignment_3.html">Nikhil:</a> Cookie</li>
+            <li><a href="">Jack:</a> </li>
+            <li><a href="https://christopherschutte.github.io/assignment3/">Chris:</a> Ice Cream</li>
+            <li><a href="">Logan:</a> </li>
+            <li><a href="https://github.com/aism1562/recitation-013/blob/main/assignment_3.html">Aiden:</a> Wonder Bread</li>
+            <li><a href="https://kadeeisen.github.io/assignment3.html">Kade:</a> British Food</li>
+
+          </ul>
+
+        </section>
+      </div>
+
+
+
+      <div class="grid-item" id="9"></div>
+      <div class="grid-item" id="10"></div>
+    </div>
+
 
   </body>
 
