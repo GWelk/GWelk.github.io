@@ -28,6 +28,37 @@
           font-size: 20px;
         }
 
+        ol {
+          list-style-type: none;
+          margin: 00px;
+          padding: 10px;
+          width: 190px;
+          display: block;
+          background-color: #f1f1f1;
+        }
+
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      /* Change the link color on hover */
+      li a:hover {
+        background-color: #555;
+        color: white;
+      }
+
+      img {
+        border-radius: 50%
+      }
+
+      li a.active {
+        background-color: #ff66cc;
+        color: white;
+      }
+
       .item1 { grid-area: header; }
       .item2 { grid-area: menu;}
       .item3 { grid-area: main; width: 600px;}
@@ -68,11 +99,18 @@
         <a href="img/Self_img_2014.jpg">
           <img src="img/Self_img_2014.jpg" width="200" alt="Picture of Gena">
         </a>
-        <p>
-          Link to <a href="Assignment01_ATLS2200.html">Assignment 1</a>
-          <br>
-          Link to <a href="assignment3.html">Assignment 3</a>
-        </p>
+
+<!--put nav here-->
+
+        <p> Links to assignments</p>
+        <nav>
+          <ol>
+          <li><a href="assignment01_ATLS2200.html">1: Hello World!</a></li>
+          <li><a class="active" href="index.html">2: About Me</a></li>
+          <li><a href="assignment3.html">3: Encyclopedia</a></li>
+          <li><a href="assignment4.html">4: HTML Challenges</a></li>
+          </ol>
+        </nav>
       </div>
 
       <div class="item3">
