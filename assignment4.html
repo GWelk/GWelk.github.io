@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Assignment4! by Gena</title>
+  <style>
+
+.chessborder {
+      border: 10px double gray;
+    }
+
+  /* tr:nth-child(even) {
+      background-color: white;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      text-align:center;
+    } */
+
+    /* tr:nth-child(odd) {
+      background-color: lavender;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      text-align:center
+    } */
+
+    /* td:nth-child(even) {
+      background-color: white;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      text-align:center
+    } */
+
+    /* td:nth-child(odd) {
+      background-color: lavender;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      text-align:center
+    } */
+
+    .pinkchess{
+      background-color:pink;
+      height:10px;
+      width:10px;
+      font-size:25pt;
+      text-align:center;
+    }
+
+      .lavchess{
+        background-color:lavender;
+        height:100px;
+        width:100px;
+        font-size:50pt;
+        text-align:center;
+      }
+
+    #aboutsearch > a:link {
+      color: lightblue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    #aboutsearch > a:visited {
+      color: #cc99ff;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+     /* a:link {
+      color: lightblue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #cc99ff;
+      background-color: transparent;
+      text-decoration: none;
+    } */
+
+    .searchlink{
+      line-height:8px;
+      font-size:10px;
+      color:white
+    }
+
+    .searchresult{
+      line-height:8px;
+      font-size:12px;
+      color: white
+
+    }
+    .searchdetail{
+      line-height:8px;
+      font-size:9pt;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <h1>Assignment 4</h1>
+  <h4 style="padding:2px"> by Gena</h4>
+  <p>Link to <a href="index.html">Home</a></p>
+
+<div id="TOC">
+  <H2>Table of Contents</H2>
+  <ol>
+    <li>Challenge 2: <a href="#chess">Chess</a>
+    </li>
+    <li>Challenge 3: <a href="#contactform">Form</a>
+    </li>
+    <li>Challenge 4: <a href="#challenge4">Replicate Google Search for Atlas</a>
+    </li>
+    <li>Challenge 5: <a href="#accessibility">Accessibility Statement</a>
+    </li>
+  </ol>
+</div>
+
+  <div id="chess">
+    <h2>Challenge 2: Build a Chessboard</h2>
+  <h3>For this challenge, I hand-coded each line. </h3>
+    <table class="chessborder">
+      <tr>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9820;</td> <!--black chess rook-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9822;</td> <!--black chess knight-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9821;</td> <!--black chess bishop-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9819;</td> <!--black chess queen-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9818;</td> <!--black chess king-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9821;</td> <!--black chess bishop-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9822;</td> <!--black chess knight-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9820;</td> <!--black chess rook-->
+      </tr>
+      <tr>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9823;</td> <!--black chess pawn-->
+      </tr>
+      <tr>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+      </tr>
+      <tr>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+      </tr>
+      <tr>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+      </tr>
+      <tr>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center"></td>
+      </tr>
+      <tr>
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+        <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9817;</td> <!--white chess pawn-->
+      </tr>
+    <tr>
+      <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9814;</td> <!--white chess rook-->
+      <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9816;</td> <!--white chess knight-->
+      <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9815;</td> <!--white chess bishop-->
+      <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9813;</td> <!--white chess queen-->
+      <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9812;</td> <!--white chess king-->
+      <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9815;</td> <!--white chess bishop-->
+      <td style="background-color:gray;height:100px;width:100px;font-size:50pt;text-align:center">&#9816;</td> <!--white chess knight-->
+      <td style="background-color:white;height:100px;width:100px;font-size:50pt;text-align:center">&#9814;</td> <!--white chess rook-->
+    </tr>
+    </table>
+  </div> <!-- end of div id "chess"-->
+
+<!--
+ <div id="chess2">
+    <h2>Challenge 2A: Build a Chessboard + Flair</h2>
+      for this challenge I used classes to code the squares -->
+    <!--<table>
+      <tr>
+        <td class="pinkchess">&#9820;</td> <!black chess rook-->
+        <!--<td class="lavchess">&#9822;</td> <!black chess knight>
+        <!<td class="pinkchess">&#9821;</td> <!black chess bishop>
+      <!  <td class="lavchess">&#9819;</td> <!black chess queen-->
+        <!--<td class="pinkchess">&#9818;</td> <!black chess king-
+        <td class="lavchess">&#9821;</td> <!black chess bishop-
+        <td class="pinkchess">&#9822;</td> <!black chess knight-
+        <td class="lavchess">&#9820;</td> <!black chess rook-->
+      <!--</tr>
+      <tr>  -->
+      <!--  <td class="lavchess">&#9823;</td> <!black chess pawn-->
+      <!--   <td class="pinkchess">&#9823;</td> <!black chess pawn-->
+      <!--   <td class="lavchess">&#9823;</td> <!black chess pawn-->
+      <!--   <td class="pinkchess">&#9823;</td> <!-black chess pawn-->
+      <!--   <td class="lavchess">&#9823;</td> <!-black chess pawn-->
+      <!--   <td class="pinkchess">&#9823;</td> <!-black chess pawn-->
+      <!--   <td class="lavchess">&#9823;</td> <!-black chess pawn-->
+      <!--   <td class="pinkchess">&#9823;</td> <!-black chess pawn-->
+    <!--   </tr>
+      <tr>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+      </tr>
+      <tr>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+      </tr>
+      <tr>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+      </tr>
+      <tr>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+        <td class="lavchess"></td>
+        <td class="pinkchess"></td>
+      </tr>-->
+    <!--  <tr>
+        <td class="pinkchess">&#9817;</td> <!-white chess pawn-->
+      <!--  <td class="lavchess">&#9817;</td> <!-white chess pawn-->
+      <!--  <td class="pinkchess">&#9817;</td> <!-white chess pawn-->
+      <!--  <td class="lavchess">&#9817;</td> <!-white chess pawn-->
+      <!--  <td class="pinkchess">&#9817;</td> <-white chess pawn-->
+      <!--  <td class="lavchess">&#9817;</td> <!-white chess pawn-->
+      <!--  <td class="pinkchess">&#9817;</td> <!-white chess pawn-->
+      <!--  <td class="lavchess">&#9817;</td> <!-white chess pawn-->
+      <!--</tr>
+    <tr>
+      <td class="lavchess">&#9814;</td> <!-white chess rook-->
+      <!--<td class="pinkchess">&#9816;</td> <!-white chess knight-->
+      <!--<td class="lavchess">&#9815;</td> <!-white chess bishop-->
+    <!--  <td class="pinkchess">&#9813;</td> <!-white chess queen-->
+    <!--  <td class="lavchess">&#9812;</td> <!-white chess king-->
+      <!--<td class="pinkchess">&#9815;</td> <!-white chess bishop-->
+    <!--  <td class="lavchess">&#9816;</td> <!-white chess knight-->
+    <!--  <td class="pinkchess">&#9814;</td> <!-white chess rook-->
+    <!--</tr>
+    <!-</table>
+<!-  </div> <!- end of div id "chess"-->
+
+<!-- For this chessboard, I attempted to use style nth-child()
+  <table>
+  			<tr>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  			</tr>
+  			<tr>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  			</tr>
+  			<tr>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  			</tr>
+  			<tr>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  			</tr>
+  			<tr>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  				<td>&nbsp;</td>
+  			</tr>
+  	</table>
+  -->
+
+
+  <div id="contactform">
+    <h2>Challenge 3: Create a Form</h2>
+    <!-- Is this form accessible?-->
+    <form>
+      <fieldset>
+        <legend>Your information</legend>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname" value="Type here."><br><br>
+        <label for="fname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname" value="Type here."><br><br>
+        <label for="email_id">Your email address:</label><br>
+        <input type="email" id="email_id" name="form_email">
+      </fieldset>
+
+      <fieldset>
+        <p>What is the nature of this contact?</p>
+        <input type="checkbox" id="reason1" name="business_reason" value="business">
+        <label for="reason1">Business or general networking.</label><br>
+        <input type="checkbox" id="reason2" name="design_reason" value="design">
+        <label for="reason2">I am looking for a UX designer.</label><br>
+        <input type="checkbox" id="reason3" name="fun_reason" value="fun">
+        <label for="reason3">Just for fun!</label><br>
+        <input type="checkbox" id="reason4" name="other_reason" value="else">
+        <label for="reason4">Something else...</label><br>
+
+        <p>Share your thoughts:</p>
+        <textarea name="comments" rows="15" cols="50">
+        </textarea>
+      </fieldset>
+
+      <fieldset>
+      <p>Would you like to be contacted?</p>
+
+        <input type="radio" id="yes" name="response_requested" value="Yes please.">
+        <label for="yes">Yes, please.</label><br>
+        <input type="radio" id="no" name="response_requested" value="No thank you.">
+        <label for="yes">No thank you.</label><br><br>
+
+        <input type="submit" value="Click to submit">
+        <input type="reset" value="Start over">
+      </fieldset>
+    </form>
+  </div><!--end of div id contactform-->
+
+<!--  Challenge 4 goes here  -->
+  <div id="challenge4">
+    <h2>Challenge 4: Replicate <a href="img/Screenshot_challenge3.png">this Google Search Page</a></h2>
+    <hr>
+
+    <div id="aboutsearch"
+        style="font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;color:#f5f5f5;
+        background-color:#383838">
+
+        <p>About 1,460,000,000 results (0.65 seconds)</p>
+        <p>&nbsp;</p>
+
+      <!-- <section id="result1"> -->
+        <p><a class="searchlink" style="text-decoration: none;" href="https://www.colorado.edu/atlas/">https://www.colorado.edu › atlas</a></p>
+        <a class="searchresult" href="https://www.colorado.edu"><h3>ATLAS Institute | University of Colorado Boulder</h3></a>
+        <p class="searchdetail">ATLAS is an interdisciplinary institute for radical creativity and invention. We transform ingenious ideas into reality through research, ...</p>
+          <table id="subsearch" style="padding:20px;">
+            <tr>
+              <td><a class="searchresult" href="https://www.colorado.edu/atlas/academics/grad"><h4>Graduate Degrees in Creative ...</h4></a>
+              <p class="searchdetail">Radically interdisciplinary, ATLAS graduate programs nurture ...</p>
+              </td>
+              <td><a class="searchresult" href="https://www.colorado.edu/atlas/faculty"><h4>Faculty</h4></a>
+              <p class="searchdetail">Lecturer, co-chair Board of Advisors • DESIGN, AR/VR ..</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="searchresult" href="https://www.colorado.edu/atlas/academics"><h4>Academics</h4></a>
+              <p class="searchdetail">Granted through the College of Engineering and Applied ...</p>
+              </td>
+              <td><a class="searchresult" href="https://www.colorado.edu/atlas/academics/undergraduate"><h4>Undergraduate Programs</h4></a>
+              <p class="searchdetail">Awarded through the College of Engineering and Applied ...</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="searchresult" href="https://www.colorado.edu/atlas/about-atlas"><h4>About</h4></a>
+              <p class="searchdetail">ATLAS is an interdisciplinary institute for radical creativity and ...</p>
+              </td>
+              <td><h4><a class="searchresult" href="https://www.colorado.edu/atlas/research-creative">Research + Creative</a></h4>
+              <p class="searchdetail">Check out ATLAS Research Showcase 2020.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><a class="searchlink" style="text-decoration: none;" href="https://www.google.com/search?q=atlas+institute+site:colorado.edu&sa=X&ved=2ahUKEwjM1dqH7-z1AhVnJzQIHcXpDOgQrAN6BAgfEAE">More results from colorado.edu »</a>
+              </td>
+            </tr>
+          </table>
+      <!-- </section> -->
+
+      <p><a class="searchlink" style="text-decoration: none;" href="https://www.colorado.edu/innovate/atlas-institute">https://www.colorado.edu › innovate › atlas-institute</a></p>
+      <a class="searchresult" href="https://www.colorado.edu"><h3>ATLAS Institute | Innovation & Entrepreneurship - University of ...</h3></a>
+      <p class="searchdetail">Resource that sponsors diverse interdisciplinary academic and research programs, challenging community members to explore, innovate, create and design well ...</p>
+      <p>&nbsp;</p>
+
+      <p><a class="searchlink" style="text-decoration: none;" href="https://www.linkedin.com/school/atlas-cu-boulder/">https://www.linkedin.com › school › atlas-cu-boulder</a></p>
+      <a class="searchresult" href="https://www.linkedin.com/school/atlas-cu-boulder/"><h3>ATLAS Institute at CU Boulder Employees, Location, Alumni</h3></a>
+      <p class="searchdetail">ATLAS is an interdisciplinary institute for radical creativity and invention where ingenious ideas become reality. · ATLAS Institute at CU Boulder. View all open ...</p>
+      <p>&nbsp;</p>
+
+      <p><a class="searchlink" style="text-decoration: none;" href="https://typemoon.fandom.com/wiki/Atlas">https://typemoon.fandom.com › wiki › Atlas</a></p>
+      <a class="searchresult" href="https://typemoon.fandom.com/wiki/Atlas"><h3>Atlas | TYPE-MOON Wiki | Fandom</h3></a>
+      ‎<p class="searchdetail">It is an institute focused on the study and development of alchemy, but its members broke off from the mainstream modern practice of alchemy that originated in ...</p>
+      ‎<a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#External_Relationships">External Relationships</a> · ‎
+      <a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#Alchemist_of_Atlas">‎Alchemist of Atlas</a> ·
+      ‎<a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#Activities">Activities</a> ·
+      <a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#Headquarters">‎Headquarters</a>
+      <p>&nbsp;</p>
+      </div> <!-- end div id aboutsearch-->
+    </div> <!-- end div id challenge4-->
+
+
+  <div id="accessibility" style="width:800px;">
+    <h2>Challenge 5: Accessibility Statement</h2>
+
+Accessibility concerns of this assignment:
+  <ul>
+    <li>In challenge 2, we are building a chessboard using a table and filling it with <a href="https://en.wikipedia.org/wiki/Chess_symbols_in_Unicode">unicode-equivalents (HTML decimal) of chesspieces</a>.
+      In general, we only want to use tables for tabular data - not for pictures.  This is because a screen readers would not know how to interpret this, as many squares are empty.  Despite this, the screen reader would read each table and row, and the user would be unlikely to make sense of it or visualize the chessboard as I have designed.
+      Another issue is that colors in this chessboard have specific meaning (in regards to which chesspieces can move where) and the screen reader might not read aloud the colors of the squares.
+      As far as mitigating this - I'm not really sure.  I believe this challenge was to practice our styling skills and not actually meant to use the chess board for playing.
+    </li>
+    <li>For challenge 3 I created a form.  I learned that using proper semantics and labels is super important here - so the browser knows how to interpret and organize the information.
+      Specifically, this is the first time I've heard of fieldset and legend tags, which are used to group related elements in the form and label them appropriately.  This clarifies to screenreaders what the sections are and in what order they should go through sections of the form.
+    </li>
+    <li>Challenge 4 was designed to have students use in-line or internal style tags to mock up a section of information the way it appears in a <a href="img/Screenshot_challenge3.png">particular Google Search</a>, as illustrated.
+      Surprisingly, there were two particular issues I noticed with this Google search page, which were directly in conflict with HTML best practices. By inspecting Google's source code,
+      I could see that the subset of links under the first result was organized using a table.  This table does not consist of tabular data, so in this instance Google is using the table to align the search results. A good practice of HTML tables is to ONLY use tables to present information that needs to be presented in a table format.
+      Secondly, many of the links were colored (to signify they were links and whether they have been visited or not), but they DO NOT have any other signifying characteristics to indicate they are links.  Because some users cannot distinguish colors, it is never advised to use color alone to designate which text is hyperlinked, as explained by <a href="https://www.w3schools.com/accessibility/accessibility_color_meaning.php">W3Schools in their accessibiity guidelines</a>.
+    </li>
+  </ul>
+
+<!--
+  <p>Semantics are super important when coding in HTML.  Gone are the days of endless div tags and chopped up images laid out in a table.
+    It's these semantics that inform the browser and screen readers how to display and navigate the page.</p>
+    <p style="width:300px;">Other basics:
+      <ul>
+        <li>How to correctly mark an image:  It's important to use alt tags and even labels - so a vision impared user can understand what is being presented.</li>
+      </ul>
+  How to correctly use a table.
+  Use nav tags!
+  The results of misuse of HTML markup will confuse screen readers and their users.
+  sPAN AND DIV  tags give no information to the browser or screen reader, and should be used infrequently.
+  If there isn't a tag to do it, add a role and name it.
+  Developers/designers don't have to do it on our own! - Tools exist to help quantify contrast ratios, such as https://contrast-ratio.com/.
+
+  In the <a href="img/Screenshot_challenge3.png">example image</a> of Challenge 4: Replicate a Google Search Page", the links are not underlined.  According to W3schools.com, color should not be used as the ONLY visual indicator of meaning (and refers here for more info: https://webaim.org/techniques/hypertext/link_text).
+
+
+<p>I am unlearning older habits:</p>
+  <ul>
+    <li>Do NOT open a link in a new window (unless you explicitly inform the user first).  You do not want to surprise the user or crowd their browser with open tabs.
+      </li>
+    <li>Never use images for words/text.
+      This is because the browser or screen reader will not read the image as text.</li>
+    <li>Do NOT use tables for arranging the page.  (This includes the archaic practice of slicing up images.)  Tables exist for tabular data, and screen readers and browsers interpet them as such.</li>
+  </ul>
+
+<p>Semantics are super important when coding in HTML.  Gone are the days of endless div tags and chopped up images laid out in a table.
+  It's these semantics that inform the browser and screen readers how to display and navigate the page.</p>
+  <p style="width:300px;">Other basics:
+    <ul>
+      <li>How to correctly mark an image:  It's important to use alt tags and even labels - so a vision impared user can understand what is being presented.</li>
+    </ul>
+How to correctly use a table.
+Use nav tags!
+The results of misuse of HTML markup will confuse screen readers and their users.
+sPAN AND DIV  tags give no information to the browser or screen reader, and should be used infrequently.
+If there isn't a tag to do it, add a role and name it.
+Developers/designers don't have to do it on our own! - Tools exist to help quantify contrast ratios, such as https://contrast-ratio.com/.
+
+In the <a href="img/Screenshot_challenge3.png">example image</a> of Challenge 4: Replicate a Google Search Page", the links are not underlined.  According to W3schools.com, color should not be used as the ONLY visual indicator of meaning (and refers here for more info: https://webaim.org/techniques/hypertext/link_text).
+-->
+
+<p>Some references:</p>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML">Accessibility information from Mozilla</a></li>
+    <li><a href="https://inclusivedesignprinciples.org/">Inclusive Design Principles</a></li>
+    <li>Accessibility information from <a href="https://www.w3schools.com/accessibility/index.php">W3Schools</a></li>
+    <li>Accessibility <a href="https://chrome.google.com/webstore/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni">plug-in for Google Chrome</a></li>
+    <li><a href="https://www.w3.org/WAI/">Web Accessibililty Initiative</a> from the World Wide Web Consortium</li>
+  </ul>
+</div>
+
+
+</body>
+
+
+</html>
