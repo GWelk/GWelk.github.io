@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Assignment5! by Gena</title>
+  <style>
+
+  .gridwrapper {
+    display: grid;
+    grid-template-columns: 50px 200px 500px auto 300px;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+    /*background-color: #2196F3;  */
+    padding: 10px;
+  }
+
+/*
+  .gridchild {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  */
+
+  .gridchildHeader {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid;
+    padding: 20px;
+    /*font-size: 30px;*/
+    text-align: center;
+  }
+
+  .gridchildNav {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid rgba(100, 0, 0, 0.8);
+    padding: 0px;
+    text-align: left;
+  }
+
+  .gridchildContent {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 35px
+    /*
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    */
+  }
+
+  .gridchildRightspace {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .gridchildFooter {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /*  -------- Start of chess styling ----------   */
+
+  .chessborder {
+      border: 20px double #ff66cc;
+    }
+
+  tr:nth-child(even) {
+      background-color: #ff66cc;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      color:blue;
+      text-align:center;
+    }
+
+    .evenRow td:nth-child(2n) {
+      background-color: white;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      color:blue;
+      text-align:center
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ff66cc;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      color:blue;
+      text-align:center
+    }
+
+    .oddRow td:nth-child(2n+1) {
+      background-color: white;
+      height:100px;
+      width:100px;
+      font-size:50pt;
+      color:blue;
+      text-align:center
+    }
+
+      /*  -------- END of chess styling ----------   */
+
+    h1 {
+     font-family: "poppins", sans-serif;
+     font-size: 45px;
+    }
+
+    h2 {
+     font-family: "poppins", sans-serif;
+     font-size: 35px;
+    }
+
+    h3 {
+     font-family: "poppins", sans-serif;
+     font-size: 45px;
+    }
+
+     p {
+      font-family: "poppins", sans-serif;
+      font-size: 20px;
+      }
+
+    .code {
+       font-family: "poppins", sans-serif;
+       font-size: 20px;
+       }
+
+      .return {
+       font-style: oblique;
+       font-family: "poppins", sans-serif;
+       font-size: 15px;
+       }
+
+    ol {
+      list-style-type: none;
+      margin: 00px;
+      padding: 0px;
+      width: 190px;
+      display: block;
+      background-color: #f1f1f1;
+    }
+
+    li a {
+    display: block;
+    color: #000;
+    padding: 8px;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+    }
+
+    li a:hover {
+    background-color: #555;
+    color: white;
+    }
+
+    li a.active {
+      background-color: #ff66cc;
+      color: white;
+    }
+
+  /*  -------- Start of styling for horizontal nav bar class="content" ----------   */
+    .content ol {
+      list-style-type: none;
+      margin: 10px;
+      padding: 0px;
+      font-size: 15px;
+      font-family: "poppins", sans-serif;
+      display: inline;
+    }
+
+    .content li a {
+      display: block;
+      text-align: right;
+      color: white;
+      padding: 8px;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: "poppins", sans-serif;
+      }
+
+    .content ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .content li {
+      float: left;
+      border-right: 1px solid #bbb;
+    }
+
+      /*.content li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }*/
+
+    .content li a:hover {
+      background-color: #111;
+    }
+
+      /*  -------- END of styling for horizontal nav bar class="content" ----------   */
+
+      /*  -------- Start of styling for form ----------   */
+    input[type=text], input[type=email], select, textarea, fieldset {
+      width: 92%;
+      padding: 12px;
+      margin: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      }
+
+      label, legend {
+        width: 92%;
+        padding: 2px;
+        margin: 20px;
+        line-height: 2px;
+        font-family: "poppins", sans-serif;
+        font-size: 20px;
+        }
+
+      input[type=submit] {
+      background-color: #ff66cc;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: left;
+      }
+
+      input[type=reset] {
+      background-color: #ff66cc;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: left;
+      }
+
+      input[type=submit]:hover {
+        background-color: #555;
+      }
+
+      input[type=reset]:hover {
+        background-color: #555;
+      }
+
+      .formContainer {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 40px;
+        width: 75%;
+      }
+      /*  -------- END of styling for form ----------   */
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="gridwrapper">
+    <div class="gridchildHeader">
+      <h1>Assignment 5</h1>
+
+      <div id="TOC" class="content">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#navchallenge">Navigation Challenge</a></li>
+          <li><a href="#chess">Chess</a></li>
+          <li><a href="#contactform">Form</a></li>
+          <li><a href="#challenge4">Replicate Google Search</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#explore">Explore</a></li>
+        </ul>
+      </div> <!---end div id TOC-->
+    </div> <!---end div class gridchildHeader-->
+
+    <div class="gridchildNav">
+        <p> Links to assignments:</p>
+        <nav>
+          <ol>
+            <li><a href="assignment01_ATLS2200.html">1: Hello World!</a></li>
+            <li><a href="index.html">2: About Me</a></li>
+            <li><a href="assignment3.html">3: Encyclopedia</a></li>
+            <li><a href="assignment4.html">4: HTML Challenges</a></li>
+            <li><a class="active" href="assignment5.html">5: HTML Challenges - Revised</a></li>
+          </ol>
+        </nav>
+    </div>  <!-- end div gridchildNav -->
+
+
+    <!--<div class="gridchild">3</div>
+    <div class="gridchild">4</div>
+    <div class="gridchild">5</div>
+    <div class="gridchild">6</div>
+    <div class="gridchild">7</div>
+    <div class="gridchild">8</div>-->
+
+
+    <div class="gridchildContent">
+
+        <div id="about">
+          <h2>About this Assignment</h2>
+          <p>This assignment is a revised assignment of <a href="assignment4.html">Assignment 4: HTML Challenges</a>.
+          When compared with the original assignment, the first thing you will likely notice is the additional styling and formatting
+          of this page is more pleasing to the eye. I accomplished this using
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a>.</p>
+        </div> <!---end div id "about"-->
+
+        <div class="return">
+          <a href="#top">[Back to Top]</a>
+        </div> <!---end div id "return"-->
+
+        <div id="navchallenge">
+          <h2>Challenge 1: Navigation</h2>
+          <p>I improved the navigation of the page by adding a horizontal navigation bar below the title of the page.  This is more interesting than the ordinary text based ordered list on the original assignment titled "Table of Contents."
+          </p>
+
+
+
+        </div> <!---end div id navchallenge"-->
+
+        <div class="return">
+          <a href="#top">[Back to Top]</a>
+        </div> <!---end div id "return"-->
+
+        <div id="chess">
+
+          <h2>Challenge 2: Build a Chessboard</h2>
+          <p>In the original challenge I coded this chessboard as a table, and coded each line by hand, including inline styling.
+            For this revised challenge, I coded with internal styling, and used the <a href="https://www.w3schools.com/cssref/sel_nth-child.asp">':nth child()' selector</a>. </p>
+
+
+          <table class="chessborder">
+        			<tr class="oddRow">
+        				<td>&#9820;</td> <!--black chess rook-->
+        				<td>&#9822;</td> <!--black chess knight-->
+        				<td>&#9821;</td> <!--black chess bishop-->
+        				<td>&#9819;</td> <!--black chess queen-->
+                <td>&#9818;</td> <!--black chess king-->
+                <td>&#9821;</td> <!--black chess bishop-->
+                <td>&#9822;</td> <!--black chess knight-->
+                <td>&#9820;</td> <!--black chess rook-->
+        			</tr>
+        			<tr class="evenRow">
+                <td>&#9823;</td> <!--black chess pawn-->
+        				<td>&#9823;</td> <!--black chess pawn-->
+                <td>&#9823;</td> <!--black chess pawn-->
+                <td>&#9823;</td> <!--black chess pawn-->
+                <td>&#9823;</td> <!--black chess pawn-->
+        				<td>&#9823;</td> <!--black chess pawn-->
+                <td>&#9823;</td> <!--black chess pawn-->
+                <td>&#9823;</td> <!--black chess pawn-->
+        			</tr>
+        			<tr class="oddRow">
+                <td>&nbsp;</td>
+        				<td>&nbsp;</td>
+        				<td>&nbsp;</td>
+        				<td>&nbsp;</td>
+                <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+          			</tr>
+          			<tr class="evenRow">
+                  <td>&nbsp;</td>
+          				<td>&nbsp;</td>
+          				<td>&nbsp;</td>
+          				<td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+          			</tr>
+                <tr class="oddRow">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="evenRow">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr class="oddRow">
+                  <td>&#9817;</td> <!--white chess pawn-->
+          				<td>&#9817;</td> <!--white chess pawn-->
+                  <td>&#9817;</td> <!--white chess pawn-->
+                  <td>&#9817;</td> <!--white chess pawn-->
+                  <td>&#9817;</td> <!--white chess pawn-->
+                  <td>&#9817;</td> <!--white chess pawn-->
+                  <td>&#9817;</td> <!--white chess pawn-->
+                  <td>&#9817;</td> <!--white chess pawn-->
+                </tr>
+                <tr class="evenRow">
+                  <td>&#9814;</td> <!--white chess rook-->
+                  <td>&#9816;</td> <!--white chess knight-->
+                  <td>&#9815;</td> <!--white chess bishop-->
+                  <td>&#9813;</td> <!--white chess queen-->
+                  <td>&#9812;</td> <!--white chess king-->
+                  <td>&#9815;</td> <!--white chess bishop-->
+                  <td>&#9816;</td> <!--white chess knight-->
+                  <td>&#9814;</td> <!--white chess rook-->
+                </tr>
+          	</table>
+
+        </div> <!---end div id "chess"-->
+        <p></p>
+        <div class="return">
+          <a href="#top">[Back to Top]</a>
+        </div> <!---end div id "return"-->
+
+        <div id="contactform">
+          <h2>Challenge 3: Build a Form</h2>
+          <p>The content of this form is primarily
+            the same as the original assignment, although I added a drop-down selection menu for the
+            user to select their current country.  I also changed the text to be moderately more friendly
+            and I used internal styling to give the buttons and sections a similar feel to the rest of the page.</p>
+
+          <div class="formContainer">
+          <h3>Say hello!  &#128075;</h3>
+
+          <form>
+            <fieldset>
+              <legend>Your information</legend>
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="firstname" value="Start typing here.">
+              <label for="fname">Last Name:</label>
+              <input type="text" id="lname" name="lastname">
+              <label for="email_id">Your email address:</label>
+              <input type="email" id="email_id" name="form_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+              <label for="country">Where are you writing from?</label>
+              <select id="country" name="country">
+                 <option value="usa">USA</option>
+                 <option value="canada">Canada</option>
+                 <option value="australia">Australia</option>
+                 <option value="usa">None of the above</option>
+                 <option value="usa">Keeping it mysterious</option>
+              </select>
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Tell me more... </legend>
+              <p>What is the nature of this contact?</p>
+              <input type="checkbox" id="reason1" name="business_reason" value="business">
+              <label for="reason1">Business or general networking.</label><br>
+              <input type="checkbox" id="reason2" name="design_reason" value="design">
+              <label for="reason2">I am looking for a UX designer.</label><br>
+              <input type="checkbox" id="reason3" name="fun_reason" value="fun">
+              <label for="reason3">Just for fun!</label><br>
+              <input type="checkbox" id="reason4" name="other_reason" value="else">
+              <label for="reason4">Something else...</label><br>
+
+
+
+              <p>Share your thoughts:</p>
+              <textarea name="comments" rows="15" cols="50">
+              </textarea>
+            </fieldset>
+
+            <fieldset>
+              <legend>Last, but not least...</legend>
+            <p>Would you like to be contacted?</p>
+
+              <input type="radio" id="yes" name="response_requested" value="Yes please.">
+              <label for="yes">Yes, please.</label><br>
+              <input type="radio" id="no" name="response_requested" value="No thank you.">
+              <label for="yes">No thank you.</label><br><br>
+
+              <input type="submit" value="Click to submit">
+              <input type="reset" value="Start over">
+            </fieldset>
+          </form>
+        </div>  <!---end div id "form-->
+      </div> <!---end div class="formContainer"-->
+
+      <div class="return">
+        <a href="#top">[Back to Top]</a>
+      </div> <!---end div id "return"-->
+
+      <div id="challenge4">
+        <h2>Challenge 4: Replicate a Google Search Page</h2>
+        <p>I successfully completed this challenge in assignment four.</p>
+      </div> <!---end div id challenge4 Google Search Page-->
+
+      
+
+      <div class="return">
+        <a href="#top">[Back to Top]</a>
+      </div> <!---end div id "return"-->
+
+      <div id="accessibility">
+        <h2>Challenge 5: Accessibility Research</h2>
+        <p>I successfully completed this challenge in assignment four.</p>
+      </div> <!---end div id challenge4 Google Search Page-->
+
+      <div class="return">
+        <a href="#top">[Back to Top]</a>
+      </div> <!---end div id "return"-->
+
+
+      <div id="explore">
+        <h2>Extra Challenge: Explore</h2>
+        <p>Do you see the hand wave emoji on the first line of the above <a href="#contactform"> contact form</a>?  &#128075;  I found a full <a href="https://www.w3schools.com/charsets/ref_emoji.asp">list of emojis</a> which are included
+          as part of charset UTF-8.  This adds a whim of fun to the text and can be read by all browsers using UTF-8 even though it appears as a small image.</p>
+        <p>Another attribute I added for this assignment is the <a href="https://www.w3schools.com/html/html_form_attributes.asp">pattern attribute</a>
+           to validate the email address in the form.  There was conflicting advice on
+           <a href="https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute#20461010">StackOverflow</a> regarding the best RegEx to use for this, and I didn't take the time to review the RegEx in detail.
+           I chose this regex:<br>
+          <code>&lt; input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /&gt;</code><br>
+           Even though this was an interesting find, the authors also noted that type="email" will basically do the validation for you even without using the pattern attribute.
+           <p>Did you notice the change in font for the Regular Expression I printed above?  I found the <a href="https://www.w3schools.com/html/html_computercode_elements.asp">HTML code element</a>, shown as the opening tag <code>&lt;code&gt;</code> and closing tag <code>&lt;/code&gt;</code> will format this text without having to set a custom style.
+           </p>
+           <p>Finally, I discovered how to escape HTML characters so the browser can print them without interpreting.  I used the text representation of a left bracket instead of typing <strong>'&lt;'</strong>, since the browser has a specialized use for brackets.
+             Now if only I could figure out how to show you which keys I coded to get the left bracket to display...  I can't figure it out, so I am linking to <a href="https://techstacker.com/how-to-escape-html/">the page that helped me</a>.
+           </p>
+      </div>
+
+      <div class="return">
+        <a href="#top">[Back to Top]</a>
+      </div> <!---end div id "return"-->
+
+    </div> <!---end div class gridchildContent-->
+
+
+
+    <div class="gridchildRightspace">&nbsp;
+    </div> <!---end div class gridchildRightspace-->
+
+
+    <div class="gridchildFooter">&nbsp;
+    </div><!---end div id "gridchildFooter"-->
+
+  </div><!---end div class gridwrapper-->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
