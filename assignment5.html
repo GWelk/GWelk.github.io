@@ -149,11 +149,6 @@
       font-size: 20px;
       }
 
-    .code {
-       font-family: "poppins", sans-serif;
-       font-size: 20px;
-       }
-
       .return {
        font-style: oblique;
        font-family: "poppins", sans-serif;
@@ -187,6 +182,33 @@
       color: white;
     }
 
+    .plain li {
+     font-family: "poppins", sans-serif;
+     font-size: 20px;
+     }
+
+    .plain li a{
+     font-family: "poppins", sans-serif;
+     font-size: 20px;
+     display: inline;
+     color: blue;
+     padding: 0px;
+     text-decoration: underline;
+     }
+
+     .plain li a:hover {
+       font-family: "poppins", sans-serif;
+       font-size: 20px;
+       background-color: transparent;
+     color: black;
+     }
+
+     .plain li a.active {
+       font-family: "poppins", sans-serif;
+       font-size: 20px;
+       background-color: #ff66cc;
+       color: white;
+     }
   /*  -------- Start of styling for horizontal nav bar class="content" ----------   */
     .content ol {
       list-style-type: none;
@@ -293,6 +315,90 @@
       /*  -------- END of styling for form ----------   */
 
 
+      /* ----- start of styling for google search page -----
+    .aboutsearch {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:14px;
+        color:#f5f5f5;
+        background-color:#383838"
+    }-*/
+
+      #aboutsearch > a:link {
+        color: lightblue;
+        background-color: transparent;
+        text-decoration: none;
+        font-size:10px;
+      }
+
+      #aboutsearch > a:visited {
+        color: #cc99ff;
+        background-color: transparent;
+        text-decoration: none;
+        font-size:10px;
+      }
+
+      #aboutsearch > a:hover {
+        color: #cc99ff;
+        background-color: transparent;
+        text-decoration: underline;
+        font-size:10px;
+      }
+
+      #aboutsearch{
+        background-color: #feeaf6;
+      }
+
+      #aboutsearch > p {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+        font-size:10px;
+      }
+
+      .ggltable td{
+        background-color: #feeaf6;
+        text-decoration: none;
+        font-size:17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+        text-align: left;
+        padding-left: 15px;
+      }
+
+      .searchlink{
+        line-height:8px;
+        font-size:13px;
+        color:gray;
+        text-decoration: none;
+      }
+
+      .searchresult{
+        line-height:8px;
+        font-size:16px;
+        color: purple;
+        text-decoration: none;
+      }
+
+      .searchresult a:hover {
+        color: purple;
+        text-decoration: underline;
+      }
+
+      .searchdetail{
+        line-height:14px;
+        font-size:9pt;
+        text-decoration: none;
+        color: gray;
+      }
+
+      .subsearch {
+        color: white;
+        background-color: gray;
+      }
+
+      /* -------End of styling for Google search page ----- */
+
+
   </style>
 
 </head>
@@ -356,6 +462,7 @@
           <h2>Challenge 1: Navigation</h2>
           <p>I improved the navigation of the page by adding a horizontal navigation bar below the title of the page.  This is more interesting than the ordinary text based ordered list on the original assignment titled "Table of Contents."
           </p>
+          <p>The navigation could be further improved to make it more responsive - meaning it would resize itself in an aestheticallly pleasing way based on the browser size.
 
 
 
@@ -533,20 +640,112 @@
 
       <div id="challenge4">
         <h2>Challenge 4: Replicate a Google Search Page</h2>
-        <p>I successfully completed this challenge in assignment four.</p>
+        <p>I successfully completed this challenge in assignment four. Here is the same segment, with different colors which more closely match the style of this page.
+          The spacing could still use improvement, and there should also be underlines when the link is hovered.  These are two issues I did not solve.</p>
       </div> <!---end div id challenge4 Google Search Page-->
 
-      
+      <div id="aboutsearch">
+        <p>About 2,300,000,000 results (0.54 seconds) </p>
+
+        <p><a class="searchlink" href="https://www.colorado.edu/atlas/">https://www.colorado.edu › atlas</a></p>
+        <p><a class="searchresult" href="https://www.colorado.edu/atlas/">ATLAS Institute | University of Colorado Boulder</a></p>
+        <p><a class="searchdetail">ATLAS is an interdisciplinary institute for radical creativity and invention. We transform ingenious ideas into reality through research, ...</a></p>
+        <p>&nbsp;</p>
+
+        <table class="ggltable">
+          <tr>
+              <td>
+                <p><a class="searchresult" href="https://www.colorado.edu/atlas/academics/grad">Graduate Degrees in Creative ...</a></p>
+                <p class="searchdetail">Radically interdisciplinary, ATLAS graduate programs nurture ...</p>
+              </td>
+              <td>
+                <p><a class="searchresult" href="https://www.colorado.edu/atlas/about-atlas">About</a></p>
+                <p class="searchdetail">ATLAS is an interdisciplinary institute for radical creativity and ...</p>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                <p><a class="searchresult" href="https://www.colorado.edu/atlas/faculty">Faculty</a></p>
+                <p class="searchdetail">Lecturer, co-chair Board of Advisors • DESIGN, AR/VR ...</p>
+              </td>
+              <td>
+                <p><a class="searchresult" href="https://www.colorado.edu/atlas/academics">Academics</a></p>
+                <p class="searchdetail">Granted through the College of Engineering and Applied ...</p>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                <a class="searchdetail" href="https://www.google.com/search?q=atlas+institute+site:colorado.edu&sa=X&ved=2ahUKEwjzgMXm__v1AhVEMn0KHcZcCmEQrAN6BAgWEAE">More results from colorado.edu »</a>
+              </td>
+          </tr>
+        </table>
+
+        <p><a class="searchlink" href="https://www.colorado.edu/innovate/atlas-institute">https://www.colorado.edu › innovate › atlas-institute</a></p>
+        <p><a class="searchresult" href="https://www.colorado.edu/innovate/atlas-institute">ATLAS Institute | Innovation & Entrepreneurship - University of ...</a></p>
+        <p><a class="searchdetail">Resource that sponsors diverse interdisciplinary academic and research programs, challenging community members to explore, innovate, create and design well ...</a></p>
+        <p>&nbsp;</p>
+
+        <p><a class="searchlink" href="https://www.linkedin.com/school/atlas-cu-boulder/">https://www.linkedin.com › school › atlas-cu-boulder</a></p>
+        <p><a class="searchresult" href="https://www.linkedin.com/school/atlas-cu-boulder/">ATLAS Institute at CU Boulder Employees, Location, Alumni</a></p>
+        <p><a class="searchdetail">ATLAS is an interdisciplinary institute for radical creativity and invention where ingenious ideas become reality. · <strong>ATLAS Institute</strong> at CU Boulder. View all open ...</a></p>
+        <p>&nbsp;</p>
+
+        <p><a class="searchlink" href="https://www.instagram.com/cu_atlas/?hl=en">https://www.linkedin.com › https://www.instagram.com › cu_atlas</a></p>
+        <p><a class="searchresult" href="https://www.instagram.com/cu_atlas/?hl=en">CU Boulder, ATLAS Institute (@cu_atlas) • Instagram photos ...</a></p>
+        <p><a class="searchdetail">ATLAS is a radically interdisciplinary institute for creative technologies, computing and design at the University of Colorado Boulder.</a></p>
+        <p>&nbsp;</p>
+
+        <p><a class="searchlink" href="https://typemoon.fandom.com/wiki/Atlas">https://typemoon.fandom.com › wiki › Atlas</a></p>
+        <p><a class="searchresult" href="https://typemoon.fandom.com/wiki/Atlas">Atlas | TYPE-MOON Wiki | Fandom</a></p>
+        <p><a class="searchdetail">  It is an institute focused on the study and development of alchemy, but its members broke off from the mainstream modern practice of alchemy that originated in ...</a></p>
+        <p><a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#External_Relationships">External Relationships</a> ·
+            ‎<a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#Alchemist_of_Atlas">Alchemist of Atlas</a> · ‎
+            <a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#Activities">Activities</a> ·
+            <a class="searchdetail" href="https://typemoon.fandom.com/wiki/Atlas#Headquarters">‎Headquarters</a>
+        <p>&nbsp;</p>
+
+
+
+
+
+
+
+      </div> <!-- end div id aboutsearch-->
+
+      <!-- </div> end div id challenge4-->
 
       <div class="return">
         <a href="#top">[Back to Top]</a>
       </div> <!---end div id "return"-->
 
-      <div id="accessibility">
-        <h2>Challenge 5: Accessibility Research</h2>
-        <p>I successfully completed this challenge in assignment four.</p>
-      </div> <!---end div id challenge4 Google Search Page-->
+      <div id="accessibility" class="plain">
+        <h2>Challenge 5: Accessibility Research (and good practices)</h2>
+        <p>I successfully completed this challenge in assignment four.  Here I will add additional findings and commentary.</p>
 
+
+      <p>Semantics are super important when coding in HTML.  Gone are the days of endless div tags and chopped up images laid out in a table.
+        It's these semantics that inform the browser and screen readers how to display and navigate the page.  After all, HTML was designed to
+        communicate the structure of a page, so it's important we use these semantics correctly.</p>
+        <p style="width:300px;">Other basics:
+          <ul>
+            <li>When marking up an image, it's important to use alt tags and even labels - so a vision impaired user can understand what is being presented.</li>
+            <li>Do NOT use tables for arranging the page or placement of pictures.  (This includes the archaic practice of slicing up images.)  Tables exist for tabular data, and screen readers and browsers interpet them as such.</li>
+            <li>Never use images for words/text.
+              This is because the browser or screen reader will not read the image as text.</li>
+            <li>Use nav tags! The <code>&lt;nav&gt;</code> element makes it clear to screen readers that these links are for navigating the current site.</li>
+            <li><code>&lt;SPAN&gt;</code> and <code>&lt;DIV&gt;</code> tags give no information to the browser or screen reader, and should be used infrequently.</li>
+            <li>If there isn't a predefined tag to accomplish your task, add a <code>"role"</code> and name it.</li>
+            <li>Visually impaired users sometimes rely on clear contrast to be able to depict what they see. </li>
+
+              <li>Developers/designers don't have to do it on our own! - Tools exist to help quantify contrast ratios, such as <a href="https://contrast-ratio.com/">Contrast Ratio.com</a>.</li>
+              <li>Do NOT open a link in a new window (unless you explicitly inform the user first).  You do not want to surprise the user or crowd their browser with open tabs.
+                </li>
+                <li>In the <a href="img/Screenshot_challenge3.png">example image</a> of Challenge 4: Replicate a Google Search Page", the links are not underlined.  According to W3schools.com,
+              <a href="https://webaim.org/techniques/hypertext/link_text">color should not be used</a> as the ONLY visual indicator of meaning.</li>
+          </ul>
+  <p>The primary takeaway here is that misusing HTML markup will result in misinterpretation by screen readers and confused users.  Be a smart developer and be kind - which means being <strong><em>considerate and inclusive</em></strong> for all users.</p>
+
+    </div> <!---end div id accessibility-->
       <div class="return">
         <a href="#top">[Back to Top]</a>
       </div> <!---end div id "return"-->
