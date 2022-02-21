@@ -1,0 +1,207 @@
+
+
+
+    body {
+      background-color: #D0EBFF;
+    }
+
+    h1 {
+      font-family: 'Mrs Sheppards', cursive;
+      font-size: 70px;
+      color: #292C7F;
+      text-shadow: 3px 3px 3px #ababab;
+    }
+
+    h2 {
+      font-family: 'Mrs Sheppards', cursive;
+      text-shadow: 3px 3px 3px #ababab;
+      color: #292C7F;
+      /*font-size: 35px;*/
+      /*align-items: center;*/
+    }
+
+    h3 {
+      font-family: 'Pragati Narrow', sans-serif;
+      font-size: 36px;
+      color: #292C7F;
+    }
+
+    h4 {
+      font-family: 'Pragati Narrow', sans-serif;
+      font-size: 30px;
+      color: #292C7F;
+    }
+
+    h5 {
+      font-family: 'Pragati Narrow', sans-serif;
+      font-size: 30px;
+      color: #2998ff;
+      text-decoration: underline;
+    }
+
+    h6 {
+      font-family: 'Pragati Narrow', sans-serif;
+      font-size: 22px;
+      color: #292C7F;
+    }
+
+    img {
+      border-radius: 50%
+    }
+
+    p, li {
+      font-family: 'Pragati Narrow', sans-serif;
+      font-size: 20px;
+      color: #292C7F;
+    }
+
+    /* unvisited link */
+    .contentSection a:link, a:visited {
+        color: #292C7F;
+        font-size: 110%;
+        text-decoration-color: #2998ff;
+        font-weight: bold;
+        text-decoration-line: underline;
+        text-decoration-thickness: 5px;
+    }
+
+    /* mouse over or "hover" link */
+    .contentSection a:hover {
+        color: #2998ff;
+        /*background-color: #FFFFFF;*/
+        text-decoration-style: solid;
+        text-decoration-color: #FFFFFF;
+        font-weight: bold;
+        text-decoration-line: underline;
+        text-decoration-thickness: 5px;
+    }
+
+
+    /* selected or active link*/
+    .contentSection a:active {
+        color: #292C7F;
+        /*background-color: #FFFFFF;*/
+        text-decoration-style: solid;
+        text-decoration-color: #FFFFFF;
+        font-weight: bold;
+        text-decoration-line: underline;
+        text-decoration-thickness: 5px;
+    }
+
+
+    /* --- for nav bar with id="navSection"  --- */
+    /* https://www.w3schools.com/CSS/css_navbar_horizontal.asp */
+
+    #navSection li {
+      display: inline;
+
+    }
+
+    #navSection li a {
+      display: block;
+      color: #D0EBFF;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #292c7f;
+      float: left;
+      border-right: .5px solid #D0EBFF;
+    }
+
+    #navSection  li:last-child {
+      border-right: none;
+    }
+
+    #navSection  li a:hover:not(.active) {
+      background-color: #FFFFFF;
+      color: #292c7f;
+    }
+
+    #navSection .active {
+      background-color: #2998ff;
+      color: #FFFFFF;
+    }
+
+/*End of horizontal nav bar styling */
+
+
+
+
+    /*Make your bullets a snowflake*/
+    /* li:before { content: '\2744'; margin-left: -20px; margin-right: 10px; } */
+    /*https://www.toptal.com/designers/htmlarrows/symbols/snowflake/*/
+    /*https://love2dev.com/blog/customize-bulleted-list/*/
+
+    /*Make bullets a star that was ceated in Figma and exported to my image files*/
+    /*https://love2dev.com/blog/customize-bulleted-list/*/
+    /*li {
+      list-style-image: url(../img/star1.png);
+    } */
+
+
+
+/* did you forget how to do grids?  https://mozilladevelopers.github.io/playground/css-grid/03-firefox-devtools
+*/
+  .grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 200px;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 30px;
+    /*grid-gap: 20px;*/
+    background-color: #D0EBFF;
+    /*padding: 20px;*/
+    padding: 40px;
+  }
+
+  .titleSection {
+    grid-column: 3/6;
+    grid-row: 1;
+  }
+
+  .imageSection{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #navSection{
+    grid-row: 2;
+    grid-column: 2/6;
+  }
+
+  .contentSection{
+    grid-row: 3;
+    grid-column: 2/5;
+    background-color: #D0EBFF;
+  }
+
+  .contentSection ul {
+      list-style-image: url(../img/star1.png);
+    }
+
+    /*
+        ul {
+          list-style-type: none;
+          margin: 10px;
+          padding: 0px;
+          overflow: hidden;
+          color:#292C7F;
+          background-color: #d0ebff;
+          border: 0px solid #292c7f;
+          float: left;
+        }
+        */
+
+
+          /*  #navSection > ol {
+              list-style-type: none;
+              margin: 0px;
+              padding: 0px;
+              overflow: hidden;
+              color:#292C7F;
+            }
+            */
+
+            /*.navSection > li {
+              float: left;
+              border-right:.5px solid #d0ebff;
+            }*/
