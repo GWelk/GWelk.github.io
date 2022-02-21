@@ -88,6 +88,16 @@
         text-decoration-thickness: 5px;
     }
 
+    hr {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: solid;
+      border-width: thin;
+      border-color: #292C7F;
+    }
 
     /* --- for nav bar with id="navSection"  --- */
     /* https://www.w3schools.com/CSS/css_navbar_horizontal.asp */
