@@ -1,0 +1,149 @@
+/* padding and border are included in the total width and height of the elements */
+/* https://www.w3schools.com/css/css_rwd_grid.asp */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2998ff; /* medium blue */
+}
+
+p, li {
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 20px;
+  color: #292C7F;
+}
+
+/* Style the navigation menu */
+.topnav {
+   overflow: hidden;
+   background-color: #292c7f;
+   position: relative;
+  }
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+ display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+ color: white;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+ background: #292c7f;
+ display: block;
+ position: absolute;
+ right: 0;
+ top: 0;
+}
+
+/* Add a light blue background color on mouse-over with dark blue text */
+.topnav a:hover {
+ background-color: #d0ebff;
+ color: #292c7f;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+ background-color: #292c7f;
+ color: white;
+}
+/* -------end navigation -------------*/
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2998ff;
+  color: #292c7f;
+  align-content: center;
+  width: 100%;
+  min-height: 400px;
+}
+
+.flexbox-item{
+  width: 300px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.flex_item_Title {
+  min-height: 100px;
+  font-family: 'Mrs Sheppards', cursive;
+  font-size: 5em;
+  justify-content: center;
+}
+
+.flex_item_spacer {
+  min-height: 100px;
+  font-size: 40px;
+}
+
+.flex_item_line {
+  min-height: 50px;
+  font-size: 20px;
+  color: #292c7f;
+  border: 1px solid #292c7f;
+}
+
+hr {
+  border: 3px solid #292c7f;
+}
+
+.flex_item_subTitle {
+  min-height: 200px;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 30px;
+}
+
+/* if the screen >= 600px, then use this styling:  */
+/* if the screen is larger than mobile, then use this styling:  */
+
+@media only screen and (min-width: 600px) {
+  body {
+  	background-color: #2998ff;
+  }
+
+  ul {
+    list-style-type: none;
+    margin:3px;
+    padding: 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+
+  }
+
+  li {
+    float: right;
+    border: 6px solid #ffffff;
+  }
+
+  li a {
+    display: block;
+    background-color: #292c7f;
+    color: #d0ebff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #292c7f;
+  }
+
+  .active {
+    background-color: #d0ebff;
+    color: #292c7f;
+  }
+
+}
+ /* end of @media only screen and (min-width: 600px)  */

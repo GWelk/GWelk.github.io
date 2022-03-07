@@ -2,88 +2,54 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>About Gena | Hello Me</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW | UX</title>
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Devonshire&family=Mrs+Sheppards&family=Pragati+Narrow:wght@400;700&family=Praise&display=swap" rel="stylesheet">
+
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
-
-    <!--This grid layout contains six columns and three rows:-->
-
-    <div class="grid-container">
-      <div class="titleSection">
-        <h1>Gena Welk</h1>
-        <h2> she | her | hers</h2>
-      </div>
-
-      <div class="imageSection">
-        <a href="img/Self_img_2014.jpg">
-          <img src="img/Self_img_2014.jpg" width="200" alt="Picture of Gena">
-        </a>
-      </div>
-
-
-        <nav id="navSection">
-          <ol>
-            <li><a href="assignments/assignment01_ATLS2200.html">1: Hello World!</a></li>
-            <li><a class="active" href="index.html">2: About Me</a></li>
-            <li><a href="assignments/assignment3.html">3: Encyclopedia</a></li>
-            <li><a href="assignments/assignment4.html">4: HTML Challenges</a></li>
-            <li><a href="assignments/assignment5.html">5: HTML Challenges - Revised</a></li>
-          </ol>
-        </nav>
-
-
-
-      <div class="contentSection">
-        <h3>ATLS 2200 Course Goals</h3>
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">&nbsp;</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
         <ul>
-          <li>Re-awaken my creativity.</li>
-          <li>Re-visit the web as publication medium.</li>
-          <li>Learn to write css without copying someone else's code.</li>
-          <li><strong>Javascript: <em>Activate!</em></strong>  Understand enough to build my own instead of using pre-written lines.</li>
-          <li>Add a little something extra. Keep it interesting.</li>
-          <li>Build professionalism.</li>
-          <li>Keep the code clean, readable, and reusable - using appropriate spacing and comments throughout.
-          <li>Walk away at the end of the semester being proud of my newly created comprehensive and engaging portfolio site.</li>
-          <li>Conquer Impostor Syndrome!</li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">Resume</a></li>
         </ul>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
-        <hr>
+    <div class="flex-container">
+      <div class="flexbox-item flex_item_spacer"></div>
+      <div class="flexbox-item flex_item_Title">Gena Welk</div>
+      <div class="flexbox-item flex_item_line"><hr></div>
+      <div class="flexbox-item flex_item_subTitle">UX Designer</div>
+      <div class="flexbox-item flex_item_spacer"></div>
+    </div>
 
-        <h3>Just who <strong>IS</strong> that girl?</h3>
-        <p> Well, it depends who's asking.  I mean, don't we all have multiple identities?
-          I'm a curious creative who loves animals and is seeking balance in life.
-          You know - balancing being active with the need to make a living, balancing
-          being the parent I thought I would be with the **me** I need to be.
-          Appreciating that with age comes wisdom, seniority, and
-          confidence - and then embracing it. Letting go of the fear of who I'm *supposed* to be.</p>
-
-          <p>Non-athlete who pretends to hate running, loves to dance, takes advantage of
-          shredding it as many powder days as possible, and keeps trying to figure out surfing.</p>
-
-          <p>Lifelong learner. Wannabe tech geek. Foodie. Dog mom. Human mom. Part introvert. Not Anti-vax,
-            just Pro-information. Question asker. Semi-oblivious to pop culture.</p>
-
-        <hr>
-
-        <h3>For the awesome <strong>Dads</strong> out there...</h3>
-        <p> Props to all those amazing dads who do the best for their kids, support
-          their partners, and who provide much needed advice. <a href="https://www.youtube.com/embed/nj85L2r171w" target="_blank">This video</a> is for you. <br>
-           <small>(Note: I am not the creator.)</small>
-        </p>
-        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/nj85L2r171w" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>-->
-      </div>  <!--end div contentSection-->
-
-    </div> <!--end div container-->
-
-
-
-
+    <script>
+    function expandMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
 
   </body>
 </html>
