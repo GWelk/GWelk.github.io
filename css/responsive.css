@@ -11,10 +11,60 @@ body {
 
 p, li {
   font-family: 'Pragati Narrow', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #292C7F;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2998ff;
+  color: #292c7f;
+  align-content: center;
+  width: 100%;
+  min-height: 400px;
+}
+
+.flexbox-item{
+  width: 300px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.flex_item_Title {
+  min-height: 100px;
+  font-family: 'Mrs Sheppards', cursive;
+  font-size: 5em;
+  text-align: center;
+}
+
+.flex_item_spacer {
+  min-height: 100px;
+}
+
+.flex_item_line {
+  min-height: 50px;
+  font-size: 20px;
+  color: #292c7f;
+  border: 1px solid #292c7f;
+}
+
+.flex_item_box {
+  height: 3px;
+  background-color: #292c7f;
+}
+
+.flex_item_subTitle {
+  min-height: 200px;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* if the screen <= 599px, then use this styling:  */
+/* if the screen is sized for mobile, then use this styling:  */
+@media only screen and (max-width: 599px) {
 /* Style the navigation menu */
 .topnav {
    overflow: hidden;
@@ -32,7 +82,7 @@ p, li {
  color: white;
  padding: 14px 16px;
  text-decoration: none;
- font-size: 17px;
+ font-size: 1.5em;
  display: block;
 }
 
@@ -58,51 +108,10 @@ p, li {
 }
 /* -------end navigation -------------*/
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #2998ff;
-  color: #292c7f;
-  align-content: center;
-  width: 100%;
-  min-height: 400px;
-}
 
-.flexbox-item{
-  width: 300px;
-  margin: 10px;
-  justify-content: center;
-}
 
-.flex_item_Title {
-  min-height: 100px;
-  font-family: 'Mrs Sheppards', cursive;
-  font-size: 5em;
-  justify-content: center;
 }
-
-.flex_item_spacer {
-  min-height: 100px;
-  font-size: 40px;
-}
-
-.flex_item_line {
-  min-height: 50px;
-  font-size: 20px;
-  color: #292c7f;
-  border: 1px solid #292c7f;
-}
-
-hr {
-  border: 3px solid #292c7f;
-}
-
-.flex_item_subTitle {
-  min-height: 200px;
-  font-family: 'Pragati Narrow', sans-serif;
-  font-size: 30px;
-}
+/* end of ---  @media only screen and (max-width: 599px) */
 
 /* if the screen >= 600px, then use this styling:  */
 /* if the screen is larger than mobile, then use this styling:  */
@@ -110,6 +119,20 @@ hr {
 @media only screen and (min-width: 600px) {
   body {
   	background-color: #2998ff;
+  }
+
+  p, li {
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 1.5em;
+    color: #292C7F;
+  }
+
+  .flex_item_Title {
+    min-height: 100px;
+    min-width: 600px;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 5em;
+    text-align: center;
   }
 
   ul {
