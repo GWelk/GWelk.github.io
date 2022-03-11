@@ -6,6 +6,8 @@ body {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
+  top: 0;
+  left: 0;
   overflow: hidden;
 }
 
