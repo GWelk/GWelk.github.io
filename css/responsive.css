@@ -9,10 +9,24 @@ body {
   background-color: #2998ff; /* medium blue */
 }
 
+h1 {
+  font-family: Cedarville; Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
 p, li {
   font-family: 'Pragati Narrow', sans-serif;
   font-size: 16px;
   color: #292C7F;
+}
+
+#myFooter{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .flex-container {
@@ -43,13 +57,6 @@ p, li {
   min-height: 100px;
 }
 
-.flex_item_line {
-  min-height: 50px;
-  font-size: 20px;
-  color: #292c7f;
-  border: 1px solid #292c7f;
-}
-
 .flex_item_box {
   height: 3px;
   background-color: #292c7f;
@@ -73,9 +80,15 @@ p, li {
    position: sticky;
   }
 
+
+
 /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
- display: none;
+ display:none;
+}
+
+i.fa {
+  display: contents;
 }
 
 /* Style navigation menu links */
@@ -109,10 +122,12 @@ p, li {
 }
 /* -------end navigation -------------*/
 
-
+#myFooter{
+  display: none;
+}
 
 }
-/* end of ---  @media only screen and (max-width: 599px) */
+/* end of --- mobile styling  @media only screen and (max-width: 599px) */
 
 /* if the screen >= 600px, then use this styling:  */
 /* if the screen is larger than mobile, then use this styling:  */
@@ -120,6 +135,10 @@ p, li {
 @media only screen and (min-width: 600px) {
   body {
   	background-color: #2998ff;
+  }
+
+  i.fa {
+    display: none;
   }
 
   p, li {
@@ -148,6 +167,7 @@ p, li {
   li {
     float: right;
     border: 6px solid #ffffff;
+    border-radius: 3px;
   }
 
   li a {
@@ -157,11 +177,17 @@ p, li {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border: 1px solid #292c7f;
+    border-radius: 10px;
+    /*transition: all .5s ease-out 1s;*/
   }
 
   li a:hover:not(.active) {
     background-color: #ffffff;
     color: #292c7f;
+    border: 1px solid #292c7f;
+    transition: all .2s ease-out .2s, background-color 1s;
+    /*font-size: 120%;*/
   }
 
   .active {
@@ -171,3 +197,129 @@ p, li {
 
 }
  /* end of @media only screen and (min-width: 600px)  */
+
+ /* ------this is the START of grid containter for projects.html---------------*/
+.projectsGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  grid-template-rows: : auto auto auto auto auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  border: red solid 1px;
+}
+
+.projGridItem {
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.proj1 {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.proj2 {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.proj3 {
+  grid-column: 4 / 5;
+  grid-row: 2;
+}
+
+.pageheadertitle{
+  grid-column: 2/5;
+  grid-row: 1;
+  z-index: 0;
+}
+
+.backbox {
+  /* border-bottom: 5px solid gray; */
+  background-color: gray;
+  grid-column: 2/5;
+  grid-row: 1;
+  height: 100px;
+  width: 100%;
+  opacity: 50%;
+  z-index: -1;
+  border-radius: 5px;
+  margin-top: 5%;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+  /* ------this is the ENDT of grid containter for projects.html---------------*/
+
+  /* ------this is the START of grid containter for about.html---------------*/
+ .aboutGridContainer {
+   display: grid;
+   grid-template-columns: 10% auto auto auto 10%;
+   /*justify-content: space-evenly;*/
+   grid-template-rows: : auto auto auto;
+   grid-row-gap: 50px;
+   grid-column-gap: 50px;
+   border: red solid 1px;
+ }
+
+ .aboutImg {
+   grid-column: 2 / 3;
+   grid-row: 1;
+   height: 100%;
+   max-width: 400px;
+   /*need help getting the image to size responsively*/
+ }
+
+ .aboutText {
+   grid-column: 3 / 4;
+   grid-row: 1;
+   max-width: 400px;
+ }
+ /* ------this is the END of grid containter for about.html---------------*/
+
+
+
+ /* ------this is the START of grid containter for resume.html---------------*/
+.resGridContainer {
+  display: grid;
+  grid-template-columns: 10% auto auto auto auto 10%;
+  /*justify-content: space-evenly;*/
+  grid-template-rows: : 10% auto auto auto auto auto 10%;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  border: red solid 1px;
+}
+
+.res {
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.resSkills {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  height: 100%;
+  max-width: 400px;
+  /*need help getting the image to size responsively*/
+}
+
+.resTools {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  max-width: 400px;
+}
+
+.resTools {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  max-width: 400px;
+}

@@ -1,0 +1,28 @@
+.slide-in {
+  /*transition: property duration timing-function delay>*/
+  transition-duration: 4s;
+  transition-delay: 1s;
+  animation-timing-function:
+}
+
+.slide-in:hover {
+  font-size: 300%;
+}
+
+a {
+  flex: 1;
+  background-color: #333;
+  color: #fff;
+
+  border: 1px solid;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all .5s ease-out 1s;
+}
+
+a:hover,
+a:focus {
+  background-color: #fff;
+  color: #333;
+}

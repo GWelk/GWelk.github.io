@@ -12,24 +12,29 @@
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="https://kit.fontawesome.com/81b26e18b6.js" crossorigin="anonymous"></script>-->
   </head>
 
   <body>
+
     <!-- Top Navigation Menu -->
     <div class="topnav">
-      <a href="#home" class="active">&nbsp;</a>
+
+      <!-- <a href="#home" class="active">&nbsp;</a>  -->
       <!-- Navigation links (hidden by default) -->
+
       <div id="myLinks">
         <ul>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="cv.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cv.html">Resume</a></li>
         </ul>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
         <i class="fa fa-bars"></i>
       </a>
+
     </div>
 
     <div class="flex-container">
@@ -39,6 +44,10 @@
       <div class="flexbox-item flex_item_subTitle">UX Designer</div>
       <div class="flexbox-item flex_item_spacer"></div>
     </div>
+
+    <footer id="myFooter">
+      <p> Footer will go here. </p>
+    </footer>
 
     <script>
     function expandMenu() {
