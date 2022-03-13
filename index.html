@@ -20,12 +20,17 @@
     <!-- Top Navigation Menu -->
     <div class="topnav">
 
-      <!-- <a href="#home" class="active">&nbsp;</a> -->
-      <p class="test"></p> 
-      <!-- Navigation links (hidden by default) -->
+      <!--icluding a p tag for spacing  -->
+      <!--If the p tag isn't there, the upper nav bar won't show on mobile.  The nav bar needs to be visible in order for the hamburger menu to be visible. -->
+      <!--for Desktop, this class is hidden - also necessary for spacing.  Otherwise there is a gap at the top of the screen in desktop view-->
+      <p class="test"></p>
 
+      <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
+
         <ul>
+          <!-- <h1>Gena Welk  </h1>
+          <p class="simple">| UX</p>-->
           <li><a href="projects.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="cv.html">Resume</a></li>
@@ -36,8 +41,10 @@
         <i class="fa fa-bars"></i>
       </a>
 
-    </div>
+    </div> <!--end of div - - -Top Navigation Menu -->
 
+
+    <!--content of page goes here. - - On this page, index.html, it is a simple name and title. -->
     <div class="flex-container">
       <div class="flexbox-item flex_item_spacer"></div>
       <div class="flexbox-item flex_item_Title">Gena Welk</div>
@@ -45,10 +52,15 @@
       <div class="flexbox-item flex_item_subTitle">UX Designer</div>
       <div class="flexbox-item flex_item_spacer"></div>
     </div>
+    <!-- end of content for this page  - - index.html -->
 
+
+    <!-- Footer goes here  -->
+    <!-- Footer is hidden on mobile -->
     <footer id="myFooter">
-      <p> Footer will go here. </p>
+      <p> &#169; 2022 | ATLS2200 </p>
     </footer>
+    <!-- Footer end - - -  -->
 
     <script>
     function expandMenu() {

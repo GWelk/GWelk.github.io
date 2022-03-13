@@ -5,13 +5,23 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
   background-color: #2998ff; /* medium blue */
 }
 
-h1 {
-  font-family: Cedarville; Arial, Helvetica, sans-serif;
+h1, h2 {
+  font-family: 'Mrs Sheppards', Arial, Helvetica, sans-serif;
   font-size: 3em;
+  color: #292C7F;
+}
+
+h2.simpleTitle {
+  font-family: 'Mrs Sheppards', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: #292C7F;
+  display: inline;
+  align-items: center;
+  height: 200px;
 }
 
 p, li {
@@ -20,6 +30,8 @@ p, li {
   color: #292C7F;
 }
 
+
+
 #myFooter{
   left: 0;
   bottom: 0;
@@ -27,6 +39,10 @@ p, li {
   height: 60px;
   background-color: #ffffff;
   text-align: center;
+  /* justify-content: center; */
+  padding: 2px;
+  border-radius: 10px;
+
 }
 
 .flex-container {
@@ -71,7 +87,13 @@ p, li {
 
 /* if the screen <= 599px, then use this styling:  */
 /* if the screen is sized for mobile, then use this styling:  */
+/*  ----MOBILE ----MOBILE ----MOBILE ----*/
 @media only screen and (max-width: 599px) {
+
+  body {
+    background-color: #2998ff; /* medium blue */
+  }
+
 /* Style the navigation menu */
 .test {
   height: 30px;
@@ -127,9 +149,132 @@ i.fa {
 }
 /* -------end navigation -------------*/
 
+/* ---on MOBILE---this is the START of grid containter for projects.html---------------*/
+.projectsGridContainer {
+ display: grid;
+ grid-template-columns: 2% auto auto 2%;
+ justify-content: space-between;
+ grid-template-rows: : auto auto auto auto auto;
+ grid-row-gap: 50px;
+ grid-column-gap: 50px;
+ border: red solid 1px;
+ padding: 50px;
+}
+
+.projGridItem {
+ background-color: gray;
+ padding: 20px;
+ border-radius: 20px;
+ width: 200px;
+ height: 200px;
+}
+
+.proj1square {
+ grid-column: 2 / 3;
+ grid-row: 2;
+}
+
+.pdescrip1 {
+ width: 200px;
+ height: 300px;
+ grid-column: 3 / 4;
+ grid-row: 2;
+ overflow-y: hidden;
+ /* border: solid black 3px; */
+}
+
+.proj2square {
+ grid-column: 2 / 3;
+ grid-row: 3;
+}
+
+.pdescrip2 {
+ width: 200px;
+ height: 300px;
+ grid-column: 3 / 4;
+ grid-row: 3;
+ overflow-y: hidden;
+}
+
+.proj3square {
+ grid-column: 2 / 3;
+ grid-row: 4;
+}
+
+.pdescrip3 {
+ width: 200px;
+ height: 300px;
+ grid-column: 3 / 4;
+ grid-row: 4;
+ overflow-y: hidden;
+}
+
+
+.pageheadertitle{
+ grid-column: 2/5;
+ grid-row: 1;
+ z-index: 0;
+ align-self: flex-start;
+ /* background-color: gray; */
+
+}
+
+h1 {
+   /* position:relative; */
+   /* z-index:1; */
+   display: inline;
+
+}
+
+.simple {
+   /* position:relative; */
+   /* z-index:1; */
+   display: inline;
+   font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+
+
+h1:after {
+   content:"";
+    position:absolute;
+   width:80%;
+   /* height:20%; */
+   background-color: pink;
+     opacity: 50%;
+   left:10%;
+   height: 15px;
+   padding: 15px;
+   border-radius: 50px;
+   /* bottom:20px; */
+   z-index:-1;
+}
+
+/* .backbox {
+ border-bottom: 5px solid gray;
+ display: inline;
+ background-color: gray;
+ grid-column: 2/5;
+ grid-row: 1;
+ width: 100%;
+ opacity: 50%;
+ z-index: -1;
+
+} */
+ /* margin-top: 10%; */
+/* } */
+
+
+img {
+ width: 100%;
+ border-radius: 4px;
+}
+
+
+ /* ------on MOBILE -- this is the ENDT of grid container for projects.html---------------*/
+
 #myFooter{
   display: none;
-  width: 100%;
 }
 
 }
@@ -137,12 +282,9 @@ i.fa {
 
 /* if the screen >= 600px, then use this styling:  */
 /* if the screen is larger than mobile, then use this styling:  */
+/*  ----DESKTOP ----DESKTOP ----DESKTOP ----*/
 
 @media only screen and (min-width: 600px) {
-  body {
-  	background-color: #2998ff;
-  }
-
   i.fa {
     display: none;
   }
@@ -173,7 +315,7 @@ i.fa {
     padding: 6px;
     overflow: hidden;
     background-color: #ffffff;
-
+    border-radius: 10px;
   }
 
   li {
@@ -214,13 +356,13 @@ i.fa {
  /* ------this is the START of grid containter for projects.html---------------*/
 .projectsGridContainer {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  justify-content: space-evenly;
+  grid-template-columns: 2% 30% 30% 30% 5%;
+  justify-content: space-between;
   grid-template-rows: : auto auto auto auto auto auto auto;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
   border: red solid 1px;
-  justif
+  padding: 50px;
 }
 
 .projGridItem {
@@ -229,19 +371,45 @@ i.fa {
   border-radius: 20px;
   width: 200px;
   height: 200px;
+
 }
 
-.proj1 {
+.proj1square {
   grid-column: 2 / 3;
   grid-row: 2;
 }
 
-.proj2 {
+.pdescrip1 {
+  width: 200px;
+  height: 300px;
+  grid-column: 2 / 3;
+  grid-row: 3;
+  overflow-y: hidden;
+  /* border: red solid 1px; */
+}
+
+.pdescrip2 {
+  width: 200px;
+  height: 300px;
+  grid-column: 3 / 4;
+  grid-row: 3;
+  overflow-y: hidden;
+}
+
+.pdescrip3 {
+  width: 200px;
+  height: 300px;
+  grid-column: 4 / 5;
+  grid-row: 3;
+  overflow-y: hidden;
+}
+
+.proj2square {
   grid-column: 3 / 4;
   grid-row: 2;
 }
 
-.proj3 {
+.proj3square {
   grid-column: 4 / 5;
   grid-row: 2;
 }
@@ -250,41 +418,55 @@ i.fa {
   grid-column: 2/5;
   grid-row: 1;
   z-index: 0;
+  align-self: flex-start;
   /* background-color: gray; */
 
 }
 
 h1 {
-    position:relative;
-    z-index:1;
+    /* position:relative; */
+    /* z-index:1; */
+    display: inline;
+
+}
+
+.simple {
+    /* position:relative; */
+    /* z-index:1; */
+    display: inline;
+    font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 
 h1:after {
     content:"";
-    position:absolute;
-    width:100%;
-    height:20%;
-    background-color:rgba(0, 20, 0, .1);
-    left:0px;
-    bottom:20px;
+     position:absolute;
+    width:80%;
+    /* height:20%; */
+    background-color: pink;
+      opacity: 50%;
+    left:10%;
+    height: 15px;
+    padding: 15px;
+    border-radius: 50px;
+    /* bottom:20px; */
     z-index:-1;
 }
 
-.backbox {
-  /* border-bottom: 5px solid gray; */
+/* .backbox {
+  border-bottom: 5px solid gray;
   display: inline;
   background-color: gray;
   grid-column: 2/5;
   grid-row: 1;
-  height: 35px;
   width: 100%;
   opacity: 50%;
   z-index: -1;
-  border-radius: 5px;
 
+} */
   /* margin-top: 10%; */
-}
+/* } */
 
 
 img {
@@ -353,8 +535,30 @@ img {
   max-width: 400px;
 }
 
-.resTools {
-  grid-column: 2 / 3;
+.resExp {
+  grid-column: 2 / 4;
   grid-row: 2;
   max-width: 400px;
 }
+
+.simpleTitle {
+  decoration: none;
+  display: inline-block;
+
+  }
+
+  /*
+  float: left;
+  border: 0px;
+  background-color: inherit;
+  display: block;
+  background-color: #292c7f;
+  color: #d0ebff;
+  text-align: center;
+  padding: 14px 16px;
+
+  /*transition: all .5s ease-out 1s;
+    transition: none;
+
+
+} */
