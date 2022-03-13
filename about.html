@@ -3,11 +3,56 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GW | About a Girl</title>
+    <title>GW | Projects</title>
     <link rel="stylesheet" href="/css/responsive.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Devonshire&family=Mrs+Sheppards&family=Pragati+Narrow:wght@400;700&family=Praise&display=swap" rel="stylesheet">
+
   </head>
 
   <body>
+
+    <div class="TopNavGridContainer">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+
+        <!--icluding a p tag for spacing  -->
+        <!--If the p tag isn't there, the upper nav bar won't show on mobile.  The nav bar needs to be visible in order for the hamburger menu to be visible. -->
+        <!--for Desktop, this class is hidden - also necessary for spacing.  Otherwise there is a gap at the top of the screen in desktop view-->
+        <p class="test"></p>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+
+          <ul>
+            <!-- <a href="projects.html" class="simpleTitle"> -->
+            <h2 class="simpleTitle">Gena Welk </h2> <h4 class="simple">| UX</h4>
+             <!-- <div class="simpleTitle"> -->
+            <!-- <a href="index.html"> -->
+            <!-- Why can't I get the underline to go away?  and why can't I center it vertically? -->
+            <!-- <p class="simple">| UX</p></a> -->
+          <!-- </a> -->
+
+          <li><a href="cv.html">Resume</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html">Home</a><li>
+          </ul>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </div> <!--end of div - - -Top Navigation Menu -->
+    </div> <!--end of div - - -Top Nav Grid Container-->
+
+      <!--content of page goes here. - - On this page, index.html, it is a simple name and title. -->
+
+
+
+
 
     <div class="aboutGridContainer">
       <div class="aboutImg"><img src="/img/katharina-bill-flowersspring_unsplash.jpg">
@@ -15,12 +60,32 @@
       <div class="aboutText">
         <h1> About this girl... </h1>
         <p> All about me. Fit in this little box. I love web.  I love design. I love UX.
-          I love data.  Lorum ipsum here.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          I love data.  Lorum ipsum here.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
 
 
 
     </div> <!-- end of div class=-->
+
+
+    <!-- Footer goes here  -->
+    <!-- Footer is hidden on mobile -->
+    <footer id="myFooter">
+      <p> &#169; 2022 | ATLS2200 </p>
+    </footer>
+    <!-- Footer end - - -  -->
+
+    <script>
+    function expandMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
   </body>
 </html>
