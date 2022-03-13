@@ -26,6 +26,14 @@ h2.simpleTitle {
   margin-bottom: 0;
 }
 
+h3 {
+  font-family: 'Pragati', Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  color: #292C7F;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
 hr.dotted {
   border: none;
   border-top: 13px dotted #292C7F;
@@ -166,61 +174,64 @@ i.fa {
 /* ---on MOBILE---this is the START of grid containter for projects.html---------------*/
 .projectsGridContainer {
  display: grid;
- grid-template-columns: 2% auto auto 2%;
+ grid-template-columns: 2px auto auto 2%;
  justify-content: space-between;
  grid-template-rows: auto auto auto auto auto;
  grid-row-gap: 50px;
- grid-column-gap: 50px;
+ grid-column-gap: 30px;
  border: red solid 1px;
- padding: 50px;
+ padding: 20px;
 }
 
 .projGridItem {
  background-color: gray;
  padding: 20px;
  border-radius: 20px;
- width: 200px;
- height: 200px;
+ width: 150px;
+ height: 150px;
+ /* margin-left: 2px; */
 }
 
 .proj1square {
- grid-column: 2 / 3;
+ grid-column: 1;
  grid-row: 2;
 }
 
 .pdescrip1 {
- width: 200px;
- height: 300px;
- grid-column: 3 / 4;
+ width: 100%;
+ max-height: 300px;
+ grid-column: 3;
  grid-row: 2;
  /* overflow-y: hidden; */
  /* border: solid black 3px; */
+  margin-bottom: 25px;
 }
 
 .proj2square {
- grid-column: 2 / 3;
+ grid-column: 1 / 3;
  grid-row: 3;
 }
 
 .pdescrip2 {
- width: 200px;
- height: 300px;
+  width: 100%;
+  max-height: 300px;
  grid-column: 3 / 4;
  grid-row: 3;
- overflow-y: hidden;
+margin-bottom: 25px;
 }
 
 .proj3square {
- grid-column: 2 / 3;
+ grid-column: 1 / 3;
  grid-row: 4;
 }
 
 .pdescrip3 {
- width: 200px;
- height: 300px;
+  width: 100%;
+  max-height: 300px;
  grid-column: 3 / 4;
  grid-row: 4;
- overflow-y: hidden;
+  margin-bottom: 25px;
+ /* overflow-y: hidden; */
 }
 
 
@@ -428,8 +439,8 @@ img {
  /* ----desktop  --this is the START of grid containter for projects.html---------------*/
 .projectsGridContainer {
   display: grid;
-  grid-template-columns: 2% 30% 30% 30% 5%;
-  justify-content: space-between;
+  grid-template-columns: 2% auto auto auto 5%;
+  justify-content: space-around;
   grid-template-rows: : auto auto auto auto auto auto auto;
   grid-row-gap: 50px;
   grid-column-gap: 50px;
@@ -441,39 +452,40 @@ img {
   background-color: gray;
   padding: 20px;
   border-radius: 20px;
-  width: 200px;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
 
 }
 
 .proj1square {
   grid-column: 2 / 3;
   grid-row: 2;
+  min-width: 150px;
 }
 
 .pdescrip1 {
-  width: 200px;
-  height: 300px;
+  min-width: 200px;
+  min-height: 300px;
   grid-column: 2 / 3;
   grid-row: 3;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   /* border: red solid 1px; */
 }
 
 .pdescrip2 {
-  width: 200px;
-  height: 300px;
+  min-width: 200px;
+  min-height: 300px;
   grid-column: 3 / 4;
   grid-row: 3;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .pdescrip3 {
-  width: 200px;
-  height: 300px;
+  min-width: 200px;
+  min-height: 300px;
   grid-column: 4 / 5;
   grid-row: 3;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .proj2square {
@@ -548,9 +560,7 @@ img.contrast {
   filter: contrast(300%);
 }
 
-img.invert {
-  filter: invert(100%);
-}
+
 
   /* ---desktop  ---this is the END of grid container for projects.html---------------*/
 
@@ -667,107 +677,126 @@ img.invert {
      max-width: 400px;
    }
 
+/*-- end of res */
+
+/* ---DESKtop---this is the START of grid containter for contact.html---------------*/
+.contactGridContainer {
+ display: grid;
+ grid-template-columns: 10% auto auto auto 2%;
+ /*justify-content: space-evenly;*/
+ grid-template-rows: auto auto auto;
+ grid-row-gap: 50px;
+ grid-column-gap: 50px;
+ border: red solid 1px;
+ padding: 40px;
+ padding-right: 0;
+ width: 100%;
+}
+
+.contactImg img {
+ grid-column: 1 / 2;
+ grid-row: 1;
+ /* height: auto; */
+ width: 250px;
+ border-radius: 20%;
+ /*need help getting the image to size responsively*/
+}
+
+.contactImg p {
+ grid-column: 1 / 2;
+ grid-row: 1;
+ /* height: auto; */
+ width: 450px;
+
+ /*need help getting the image to size responsively*/
+}
+
+img.invert {
+  filter: invert(100%);
+}
+
+.contactForm {
+  border-radius: 10px;
+  background-color: #d0ebff;
+  padding: 50px;
+  width: 100%;
+  grid-column: 3 / 5;
+  grid-row: 1/3;
+  max-width: 800px;
+  justify-content:space-around;
+}
+
+
+
+/*  -------- Start of styling for contact form ----------   */
+input[type=text], input[type=email], select, textarea, fieldset {
+width: 92%;
+padding: 12px;
+margin: 20px;
+border: 1px solid #292C7F;
+border-radius: 4px;
+resize: vertical;
+}
+
+label, legend {
+  width: 92%;
+  padding: 2px;
+  margin: 20px;
+  line-height: 2px;
+  font-family: "Pragati", sans-serif;
+  font-size: 20px;
+  color: #292C7F
+  }
+
+  legend {
+     font-size: 2em;
+  }
+
+input[type=submit] {
+background-color: #292C7F;
+color: white;
+padding: 12px 20px;
+margin: 10px;
+border: 1px solid #292C7F;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+}
+
+input[type=reset] {
+background-color: #292C7F;
+color: white;
+padding: 12px 20px;
+margin: 10px;
+border: 1px solid #292C7F;
+border-radius: 4px;
+cursor: pointer;
+float: left;
+}
+
+input[type=submit]:hover  {
+  background-color: #ffffff;
+  border: 1px solid #292C7F;
+  color: #292C7F;
+}
+
+input[type=reset]:hover {
+  background-color: #ffffff;
+  border: 1px solid #292C7F;
+  color: #292C7F;
+}
+
+
+/*  -------- END of styling for form ----------   */
+/* ---DESKtop---this is the END of grid containter for contact.html---------------*/
+
+
 }
  /* DESKTOP ---  end of @media only screen and (min-width: 600px)  */
 
 
 
- /* ------this is the START of grid containter for contact.html---------------*/
-.contactGridContainer {
-  display: grid;
-  grid-template-columns: 10% auto auto auto 10%;
-  /*justify-content: space-evenly;*/
-  grid-template-rows: : auto auto auto;
-  grid-row-gap: 50px;
-  grid-column-gap: 50px;
-  border: red solid 1px;
-  padding: 50px;
-}
 
-.contactImg {
-  grid-column: 2 / 3;
-  grid-row: 1;
-  height: 100%;
-  max-width: 400px;
-  /*need help getting the image to size responsively*/
-}
-
-
-/* .aboutText {
-  grid-column: 3 / 4;
-  grid-row: 1;
-  max-width: 400px;
-} */
-/* ------this is the END of grid containter for about.html---------------*/
-
- /*  -------- Start of styling for contactimg ----------   */
- input[type=text], input[type=email], select, textarea, fieldset {
- width: 92%;
- padding: 12px;
- margin: 20px;
- border: 1px solid #292C7F;
- border-radius: 4px;
- resize: vertical;
- }
-
- label, legend {
-   width: 92%;
-   padding: 2px;
-   margin: 20px;
-   line-height: 2px;
-   font-family: "Pragati", sans-serif;
-   font-size: 20px;
-   color: #292C7F
-   }
-
-   legend {
-      font-size: 2em;
-   }
-
- input[type=submit] {
- background-color: #292C7F;
- color: white;
- padding: 12px 20px;
- margin: 10px;
- border: 1px solid #292C7F;
- border-radius: 4px;
- cursor: pointer;
- float: left;
- }
-
- input[type=reset] {
- background-color: #292C7F;
- color: white;
- padding: 12px 20px;
- margin: 10px;
- border: 1px solid #292C7F;
- border-radius: 4px;
- cursor: pointer;
- float: left;
- }
-
- input[type=submit]:hover  {
-   background-color: #ffffff;
-   border: 1px solid #292C7F;
-   color: #292C7F;
- }
-
- input[type=reset]:hover {
-   background-color: #ffffff;
-   border: 1px solid #292C7F;
-   color: #292C7F;
- }
-
- .contactClass {
-   border-radius: 5px;
-   background-color: #d0ebff;
-   padding: 40px;
-   width: 75%;
-   grid-column: 3 / 5;
-   grid-row: 1/3;
-   max-width: 600px;
- }
- /*  -------- END of styling for form ----------   */
 
 
 
