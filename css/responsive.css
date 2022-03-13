@@ -154,7 +154,7 @@ i.fa {
  display: grid;
  grid-template-columns: 2% auto auto 2%;
  justify-content: space-between;
- grid-template-rows: : auto auto auto auto auto;
+ grid-template-rows: auto auto auto auto auto;
  grid-row-gap: 50px;
  grid-column-gap: 50px;
  border: red solid 1px;
@@ -179,7 +179,7 @@ i.fa {
  height: 300px;
  grid-column: 3 / 4;
  grid-row: 2;
- overflow-y: hidden;
+ /* overflow-y: hidden; */
  /* border: solid black 3px; */
 }
 
@@ -233,6 +233,13 @@ h1 {
    font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
    text-decoration: none;
 }
+
+.simpleTitle {
+  decoration: none;
+  display: inline-block;
+  float: left;
+
+  }
 
 
 h1:after {
@@ -350,10 +357,8 @@ img {
     color: #292c7f;
   }
 
-}
- /* end of @media only screen and (min-width: 600px)  */
 
- /* ------this is the START of grid containter for projects.html---------------*/
+ /* ----desktop  --this is the START of grid containter for projects.html---------------*/
 .projectsGridContainer {
   display: grid;
   grid-template-columns: 2% 30% 30% 30% 5%;
@@ -475,7 +480,10 @@ img {
 }
 
 
-  /* ------this is the ENDT of grid containter for projects.html---------------*/
+  /* ------this is the END of grid container for projects.html---------------*/
+
+}
+ /* DESKTOP ---  end of @media only screen and (min-width: 600px)  */
 
   /* ------this is the START of grid containter for about.html---------------*/
  .aboutGridContainer {
@@ -541,11 +549,7 @@ img {
   max-width: 400px;
 }
 
-.simpleTitle {
-  decoration: none;
-  display: inline-block;
 
-  }
 
   /*
   float: left;
