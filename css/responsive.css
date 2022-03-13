@@ -30,7 +30,11 @@ p, li {
   color: #292C7F;
 }
 
-
+ul.skills{
+   list-style-type: circle;
+   float: left;
+   display: block;
+}
 
 #myFooter{
   left: 0;
@@ -480,6 +484,75 @@ img {
     display: hidden;
     }
 
+    /* ------this is the START of grid containter for resume.html---------------*/
+   .resGridContainer {
+     display: grid;
+     grid-template-columns: 10% auto auto auto auto auto 10%;
+     /*justify-content: space-evenly;*/
+     grid-template-rows: : 10% auto auto auto auto auto 10%;
+     grid-row-gap: 50px;
+     grid-column-gap: 50px;
+     border: red solid 1px;
+     padding: 20px;
+   }
+
+   .res {
+     background-color: gray;
+     border-radius: 10px;
+   }
+
+   /* .skills {
+     display: block;
+   } */
+
+
+   ul.skills{
+      list-style-type: circle;
+      float: left;
+      display: block;
+   }
+
+   .skillsTitle {
+     grid-column: 2 / 4;
+     grid-row: 1;
+     margin-top : 0;
+     margin-bottom: 0;
+     border: red solid 2px;
+   }
+
+   .resSkills {
+     grid-column: 2 / 4;
+     grid-row: 2;
+     height: 100%;
+     max-width: 400px;
+     /*need help getting the image to size responsively*/
+   }
+
+   .toolsTitle {
+     grid-column: 2 / 4;
+     grid-row: 3;
+     margin-top : 0;
+     margin-bottom: 0;
+     border: red solid 2px;
+   }
+
+   .resTools {
+     grid-column: 2 / 4;
+     grid-row: 4;
+     max-width: 400px;
+   }
+
+   .expTitle {
+     grid-column: 5 / 7;
+     grid-row: 1;
+   }
+
+   .resExp {
+     grid-column: 5 / 7;
+     grid-row: 2 / 6;
+     max-width: 400px;
+   }
+
 }
  /* DESKTOP ---  end of @media only screen and (min-width: 600px)  */
 
@@ -512,41 +585,7 @@ img {
 
 
 
- /* ------this is the START of grid containter for resume.html---------------*/
-.resGridContainer {
-  display: grid;
-  grid-template-columns: 10% auto auto auto auto 10%;
-  /*justify-content: space-evenly;*/
-  grid-template-rows: : 10% auto auto auto auto auto 10%;
-  grid-row-gap: 50px;
-  grid-column-gap: 50px;
-  border: red solid 1px;
-}
 
-.res {
-  background-color: gray;
-  border-radius: 10px;
-}
-
-.resSkills {
-  grid-column: 3 / 4;
-  grid-row: 1;
-  height: 100%;
-  max-width: 400px;
-  /*need help getting the image to size responsively*/
-}
-
-.resTools {
-  grid-column: 2 / 3;
-  grid-row: 2;
-  max-width: 400px;
-}
-
-.resExp {
-  grid-column: 2 / 4;
-  grid-row: 2;
-  max-width: 400px;
-}
 
 
 
