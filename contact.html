@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW | Projects</title>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Devonshire&family=Mrs+Sheppards&family=Pragati+Narrow:wght@400;700&family=Praise&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="TopNavGridContainer">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+
+        <!--icluding a p tag for spacing  -->
+        <!--If the p tag isn't there, the upper nav bar won't show on mobile.  The nav bar needs to be visible in order for the hamburger menu to be visible. -->
+        <!--for Desktop, this class is hidden - also necessary for spacing.  Otherwise there is a gap at the top of the screen in desktop view-->
+        <p class="test"></p>
+
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+
+          <ul>
+            <!-- <a href="projects.html" class="simpleTitle"> -->
+            <h2 class="simpleTitle">Gena Welk </h2> <p class="simple">| UX</p><!-- <div class="simpleTitle"> -->
+            <!-- <a href="index.html"> -->
+            <!-- Why can't I get the underline to go away?  and why can't I center it vertically? -->
+            <!-- <p class="simple">| UX</p></a> -->
+          <!-- </a> -->
+
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="cv.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html">Home</a><li>
+          </ul>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </div> <!--end of div - - -Top Navigation Menu -->
+    </div> <!--end of div - - -Top Nav Grid Container-->
+
+      <!--content of page goes here. - - On this page, index.html, it is a simple name and title. -->
+
+
+
+
+
+    <div class="contactGridContainer">
+       <div class="contactImg">
+        <img src="/img/321_Contact2.png">
+      <!-- <img class="contrast" src="/img/321_Contact2.png"> -->
+        <img class="invert" src="/img/321_Contact2.png">
+        <p>I could not resist this nostalgic reference. :)</p>
+      </div>
+
+        <!--start of form container copied from assignment 5.html -->
+        <div class="contactClass">
+        <h2>Say hello!  &#128075;</h2>
+
+        <form>
+          <fieldset>
+            <legend>Your information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" value="Start typing here.">
+            <label for="fname">Last Name:</label>
+            <input type="text" id="lname" name="lastname">
+            <label for="email_id">Your email address:</label>
+            <input type="email" id="email_id" name="form_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+            <label for="country">Where are you writing from?</label>
+            <select id="country" name="country">
+               <option value="usa">USA</option>
+               <option value="canada">Canada</option>
+               <option value="australia">Australia</option>
+               <option value="usa">None of the above</option>
+               <option value="usa">Keeping it mysterious</option>
+            </select>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Tell me more... </legend>
+            <p>What is the nature of this contact?</p>
+            <input type="checkbox" id="reason1" name="business_reason" value="business">
+            <label for="reason1">Business or general networking.</label><br>
+            <input type="checkbox" id="reason2" name="design_reason" value="design">
+            <label for="reason2">I am looking for a UX designer.</label><br>
+            <input type="checkbox" id="reason3" name="fun_reason" value="fun">
+            <label for="reason3">Just for fun!</label><br>
+            <input type="checkbox" id="reason4" name="other_reason" value="else">
+            <label for="reason4">Something else...</label><br>
+
+
+
+            <p>Share your thoughts:</p>
+            <textarea name="comments" rows="15" cols="50">
+            </textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Last, but not least...</legend>
+          <p>Would you like to be contacted?</p>
+
+            <input type="radio" id="yes" name="response_requested" value="Yes please.">
+            <label for="yes">Yes, please.</label><br>
+            <input type="radio" id="no" name="response_requested" value="No thank you.">
+            <label for="yes">No thank you.</label><br><br>
+
+            <input type="submit" value="Click to submit">
+            <input type="reset" value="Start over">
+          </fieldset>
+        </form>
+      </div>  <!---end div id "form-->
+    </div> <!---end div class="formContainer"-->
+    <!--end of form container copied from assignment 5.html -->
+
+
+
+    </div> <!-- end of div class=-->
+
+
+    <!-- Footer goes here  -->
+    <!-- Footer is hidden on mobile -->
+    <footer id="myFooter">
+      <p> &#169; 2022 | ATLS2200 </p>
+    </footer>
+    <!-- Footer end - - -  -->
+
+    <script>
+    function expandMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+  </body>
+</html>

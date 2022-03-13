@@ -22,6 +22,16 @@ h2.simpleTitle {
   display: inline;
   align-items: center;
   height: 200px;
+  margin-top: 20%;
+  margin-bottom: 0;
+}
+
+hr.dotted {
+  border: none;
+  border-top: 13px dotted #292C7F;
+  border-radius: 70%;
+  opacity: 40%;
+  /* height: 10%; */
 }
 
 p, li {
@@ -236,6 +246,7 @@ h1 {
    display: inline;
    font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
    text-decoration: none;
+
 }
 
 /* .simpleTitle {
@@ -277,6 +288,9 @@ img {
  border-radius: 4px;
 }
 
+.contrast {
+  filter: contrast(180%);
+}
 
  /* ------on MOBILE -- this is the ENDT of grid container for projects.html---------------*/
 
@@ -477,6 +491,13 @@ img {
   border-radius: 4px;
 }
 
+img.contrast {
+  filter: contrast(300%);
+}
+
+img.invert {
+  filter: invert(100%);
+}
 
   /* ------this is the END of grid container for projects.html---------------*/
 
@@ -576,6 +597,7 @@ img {
    /*need help getting the image to size responsively*/
  }
 
+
  .aboutText {
    grid-column: 3 / 4;
    grid-row: 1;
@@ -583,7 +605,102 @@ img {
  }
  /* ------this is the END of grid containter for about.html---------------*/
 
+ /* ------this is the START of grid containter for contact.html---------------*/
+.contactGridContainer {
+  display: grid;
+  grid-template-columns: 10% auto auto auto 10%;
+  /*justify-content: space-evenly;*/
+  grid-template-rows: : auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  border: red solid 1px;
+  padding: 50px;
+}
 
+.contactImg {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  height: 100%;
+  max-width: 400px;
+  /*need help getting the image to size responsively*/
+}
+
+
+/* .aboutText {
+  grid-column: 3 / 4;
+  grid-row: 1;
+  max-width: 400px;
+} */
+/* ------this is the END of grid containter for about.html---------------*/
+
+ /*  -------- Start of styling for contactimg ----------   */
+ input[type=text], input[type=email], select, textarea, fieldset {
+ width: 92%;
+ padding: 12px;
+ margin: 20px;
+ border: 1px solid #292C7F;
+ border-radius: 4px;
+ resize: vertical;
+ }
+
+ label, legend {
+   width: 92%;
+   padding: 2px;
+   margin: 20px;
+   line-height: 2px;
+   font-family: "Pragati", sans-serif;
+   font-size: 20px;
+   color: #292C7F
+   }
+
+   legend {
+      font-size: 2em;
+   }
+
+ input[type=submit] {
+ background-color: #292C7F;
+ color: white;
+ padding: 12px 20px;
+ margin: 10px;
+ border: 1px solid #292C7F;
+ border-radius: 4px;
+ cursor: pointer;
+ float: left;
+ }
+
+ input[type=reset] {
+ background-color: #292C7F;
+ color: white;
+ padding: 12px 20px;
+ margin: 10px;
+ border: 1px solid #292C7F;
+ border-radius: 4px;
+ cursor: pointer;
+ float: left;
+ }
+
+ input[type=submit]:hover  {
+   background-color: #ffffff;
+   border: 1px solid #292C7F;
+   color: #292C7F;
+ }
+
+ input[type=reset]:hover {
+   background-color: #ffffff;
+   border: 1px solid #292C7F;
+   color: #292C7F;
+ }
+
+ .contactClass {
+   border-radius: 5px;
+   background-color: #d0ebff;
+   padding: 40px;
+   width: 75%;
+   grid-column: 3 / 5;
+   grid-row: 1/3;
+   max-width: 600px;
+ }
+ /*  -------- END of styling for form ----------   */
 
 
 
