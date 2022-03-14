@@ -215,7 +215,7 @@ to {position: relative;
 }
 
 .projGridItem {
- background-color: gray;
+ background-color: white;
  padding: 20px;
  border-radius: 20px;
  width: 150px;
@@ -226,6 +226,7 @@ to {position: relative;
 .proj1square {
  grid-column: 1;
  grid-row: 2;
+ overflow: hidden;
 }
 
 .pdescrip1 {
@@ -241,7 +242,9 @@ to {position: relative;
 .proj2square {
  grid-column: 1 / 3;
  grid-row: 3;
+ overflow: hidden;
 }
+
 
 .pdescrip2 {
   width: 100%;
@@ -254,6 +257,7 @@ margin-bottom: 25px;
 .proj3square {
  grid-column: 1 / 3;
  grid-row: 4;
+ overflow: hidden;
 }
 
 .pdescrip3 {
@@ -325,8 +329,21 @@ h1 {
 /* } */
 
 
-img {
- width: 100%;
+.proj1square img {
+ max-width: 100%;
+ height: 200px;
+ border-radius: 4px;
+}
+
+.proj2square img {
+ max-width: 200px;
+ height: auto;
+ border-radius: 4px;
+}
+
+.proj3square img {
+ max-width: 200px;
+ height: auto;
  border-radius: 4px;
 }
 
