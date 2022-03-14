@@ -554,26 +554,30 @@ h1 {
  /*  ---mobile----- Start of styling for contact form ----------   */
  input[type=text], input[type=email], select, textarea, fieldset {
  width: 92%;
- padding: 12px;
- margin: 20px;
+ padding: 6px;
+ margin: 10px;
  border: 1px solid #292C7F;
  border-radius: 4px;
  resize: vertical;
  }
 
+ fieldset{
+   padding: 26px;
+ }
+
  label, legend {
    width: 92%;
    padding: 2px;
-   margin: 20px;
+   margin: 2px;
    line-height: 2px;
    font-family: "Pragati", sans-serif;
    font-size: 20px;
    color: #292C7F
    }
 
-   legend {
+   /* legend {
       font-size: 1.2em;
-   }
+   } */
 
  input[type=submit] {
  background-color: #292C7F;
