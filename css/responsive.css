@@ -551,7 +551,7 @@ h1 {
 
 
 
- /*  -------- Start of styling for contact form ----------   */
+ /*  ---mobile----- Start of styling for contact form ----------   */
  input[type=text], input[type=email], select, textarea, fieldset {
  width: 92%;
  padding: 12px;
@@ -572,7 +572,7 @@ h1 {
    }
 
    legend {
-      font-size: 2em;
+      font-size: 1.2em;
    }
 
  input[type=submit] {
@@ -1072,7 +1072,7 @@ img.invert {
 
 
 
-/*  -------- Start of styling for contact form ----------   */
+/*  ---desktop----- Start of styling for contact form ----------   */
 input[type=text], input[type=email], select, textarea, fieldset {
 width: 92%;
 padding: 12px;
