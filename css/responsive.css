@@ -61,6 +61,8 @@ ul.skills{
 }
 
 
+
+
 /*  Ugh - I can't get the footer to be on the bottom */
 #myFooter{
   /* position:relative;
@@ -458,6 +460,10 @@ h1 {
   height: 100%;
   max-width: 400px;
  }
+
+ ul.skills {
+     list-style-image: url(../img/star1.png);
+   }
 
  .toolsTitle {
   grid-column: 2 ;
@@ -933,6 +939,10 @@ img.contrast {
       float: left;
       display: block;
    }
+
+   ul.skills {
+       list-style-image: url(../img/star1.png);
+     }
 
    .skillsTitle {
      grid-column: 2 / 4;
