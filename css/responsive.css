@@ -60,6 +60,14 @@ ul.skills{
    display: block;
 }
 
+#changeBox {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background: white;
+  margin: 20px auto;
+}
+
 
 
 
