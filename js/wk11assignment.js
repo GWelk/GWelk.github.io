@@ -1,16 +1,37 @@
-var button = document.querySelector('button');
-var box = document.getElementById('changeBox');
 
+var mybox = document.getElementById('changeBox');
+
+// var mybutton = document.querySelector('button');
 // button.onclick = function changeColor(){
 //   box.style.background = 'blue';
 // }
 
 function changeColor(){
-  if(box.style.background == 'blue'){
-    box.style.background = 'white';
+  if(mybox.style.background == 'blue'){
+    mybox.style.background = 'white';
   }else{
-    box.style.background = 'blue';
+    mybox.style.background = 'blue';
   }
+}
+
+function changetoBlue(){
+  mybox.style.background = 'blue';
+}
+
+function changetoWhite(){
+  mybox.style.background = 'white';
+}
+
+function changetoBlack(){
+  mybox.style.background = 'black';
+}
+
+function changetoPink(){
+  mybox.style.background = 'pink';
+}
+
+function changetoGray(){
+  mybox.style.background = 'gray';
 }
 
 // function changeColor(){
