@@ -267,15 +267,6 @@ ul.skills{
   margin-left: 30px;
 }
 
-function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
-}
-
-function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
-}
 
 /*  Ugh - I can't get the footer to be on the bottom */
 #myFooter{
