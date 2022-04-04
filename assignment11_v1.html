@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Devonshire&family=Mrs+Sheppards&family=Pragati+Narrow:wght@400;700&family=Praise&display=swap" rel="stylesheet">
+    <script defer src="/js/wk11assignment_v1.js" charset="utf-8"></script>
+    <title>Assignment 11 | GWelk</title>
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/81b26e18b6.js" crossorigin="anonymous"></script>
+    <!--<script src="https://kit.fontawesome.com/81b26e18b6.js" crossorigin="anonymous"></script>-->
+  </head>
+
+
+
+  <body>
+    <div class="TopNavGridContainer">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+
+        <!--icluding a p tag for spacing  -->
+        <!--If the p tag isn't there, the upper nav bar won't show on mobile.  The nav bar needs to be visible in order for the hamburger menu to be visible. -->
+        <!--for Desktop, this class is hidden - also necessary for spacing.  Otherwise there is a gap at the top of the screen in desktop view-->
+        <p class="test"></p>
+
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+
+            <ul>
+              <a href="index.html" class="simpleTitle"><h2>Gena Welk </h2> <p class="simple">| UX</p></a>
+            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="cv.html">Resume</a></li>
+            <li><a href="about.html" >About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="expandMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+
+      </div> <!--end of div - - -Top Navigation Menu -->
+    </div> <!--end of div - - -Top Nav Grid Container-->
+
+      <!--content of page goes here. - - On this page, assignment11.html, I am playing with JavaScript. -->
+
+
+
+      <h3>Step 1: Change the color of the squares and make them match.</h3>
+      <h3>Step 2: When you are finished, "touch" the basketball with your cursor.</h3>
+      <div class="droptarget" id="a">
+        <!-- <i class="fa-solid fa-basketball" id="BBall"
+        draggable="true" onmouseover="bigImg(this)" onmouseout="normalImg(this)"></i> -->
+        <img src="../img/noun-basketball-1057948.png" id="BBall">
+
+      </div>
+      <!-- <div class="droptarget">
+      </div> -->
+
+
+
+      <!-- <button onclick="changeColor()">Click me for action</button> -->
+      <div class="container_of_squares">
+        <div class="square" id="square1">
+
+          <button id="changetoBlue()">blue</button>
+          <button onclick="changetoWhite()">white</button>
+          <button onclick="changetoBlack()">black</button>
+          <button onclick="changetoPink()">pink</button>
+          <button onclick="changetoGray()">gray</button>
+
+          <div class="square_forChangeBox" id="changeBox1">
+          </div>
+        </div>
+
+        <div class="square" id="square2">
+
+          <button onclick="changeto2Blue()">blue</button>
+          <button onclick="changeto2White()">white</button>
+          <button onclick="changeto2Black()">black</button>
+          <button onclick="changeto2Pink()">pink</button>
+          <button onclick="changeto2Gray()">gray</button>
+
+          <div class="square_forChangeBox" id="changeBox2">
+          </div>
+        </div>
+
+        <div class="square" id="square3">
+
+          <button onclick="changeto3Blue()">blue</button>
+          <button onclick="changeto3White()">white</button>
+          <button onclick="changeto3Black()">black</button>
+          <button onclick="changeto3Pink()">pink</button>
+          <button onclick="changeto3Gray()">gray</button>
+
+          <div class="square_forChangeBox" id="changeBox3">
+          </div>
+        </div>
+
+        <div class="square" id="square4">
+
+          <button onclick="changeto4Blue()">blue</button>
+          <button onclick="changeto4White()">white</button>
+          <button onclick="changeto4Black()">black</button>
+          <button onclick="changeto4Pink()">pink</button>
+          <button onclick="changeto4Gray()">gray</button>
+
+          <div class="square_forChangeBox" id="changeBox4">
+          </div>
+        </div>
+
+      </div>
+
+  </body>
+</html>

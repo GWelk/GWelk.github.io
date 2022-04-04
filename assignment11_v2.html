@@ -7,11 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Devonshire&family=Mrs+Sheppards&family=Pragati+Narrow:wght@400;700&family=Praise&display=swap" rel="stylesheet">
-    <script defer src="/js/wk11assignment.js" charset="utf-8"></script>
+    <script defer src="/js/wk11assignment_v2.js" charset="utf-8"></script>
     <title>Assignment 11 | GWelk</title>
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/81b26e18b6.js" crossorigin="anonymous"></script>
     <!--<script src="https://kit.fontawesome.com/81b26e18b6.js" crossorigin="anonymous"></script>-->
   </head>
 
@@ -47,14 +48,67 @@
     </div> <!--end of div - - -Top Nav Grid Container-->
 
       <!--content of page goes here. - - On this page, assignment11.html, I am playing with JavaScript. -->
-      <p>What color do you want the square to be?</p>
-      <!-- <button onclick="changeColor()">Click me for action</button> -->
-      <button onclick="changetoBlue()">blue</button>
-      <button onclick="changetoWhite()">white</button>
-      <button onclick="changetoBlack()">black</button>
-      <button onclick="changetoPink()">pink</button>
-      <button onclick="changetoGray()">gray</button>
-      <div id="changeBox"></div>
+
+
+
+
+
+      <div class="container_of_squares">
+          <div id="titleBar">
+            <h3>Step 1: Change the color of the square, <br> by clicking one of the respective buttons from the right.</h3>
+          </div>
+
+          <div class="square" id="square3">
+            <div class="square_forChangeBox" id="changeBox1"></div>
+          </div>
+
+          <div id="colorButtons">
+            <ul>
+              <p>Pick a color: </p>
+              <li><button id="makeGray">Gray</button></li>
+              <li><button id="makeBlue">Blue</button></li>
+              <li><button id="makeWhite">White</button></li>
+              <li><button id="makePink">Pink</button></li>
+              <li><button id="makeMagenta">Magenta</button></li>
+              <li><button id="makePurple">Purple</button></li>
+            </ul>
+          </div>
+
+          <div id="titleBar2">
+            <h3>Step 2: Rollovers</h3>
+          </div>
+
+          <div class="square" id="targetSquare">
+            <div class="square_forChangeBox" id="changeBoxforRoll">
+              <div id="A">D</div>
+              <div id="B">O</div>
+              <div id="C">G</div>
+            </div>
+          </div>
+
+          <div id="secretLetters">
+            <p>To see the letters, move your cursor over the respective white boxes which show "Letter [x]"</p>
+            <div class="overRoll_forLetter" id="L1">Letter 1</div>
+            <div class="overRoll_forLetter" id="L2">Letter 2</div>
+            <div class="overRoll_forLetter" id="L3">Letter 3</div>
+            <h3>What word did you spell?  Enter it here:</h3>
+            <input id="theguess">
+            <button id="submitting">Submit</button>
+            <p id="demo"></p>
+
+
+
+          </div>
+
+            <div id="bottomspace"><p>&nbsp;</p>
+
+
+
+
+
+
+
+      </div>
 
 
   </body>

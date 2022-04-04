@@ -60,16 +60,222 @@ ul.skills{
    display: block;
 }
 
-#changeBox {
+/* #changeBox {
   width: 200px;
   height: 200px;
   margin: 20px;
   background: white;
   margin: 20px auto;
+  border-radius: 25px;
+} */
+
+.container_of_squares {
+  display: grid;
+  grid-template-columns: 20% auto auto 20%;
+  grid-auto-rows: 20% auto auto auto 20% 50px 50px;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+
+
+.square{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  /* background: white; */
+  margin: 30px auto;
+  /* border-radius: 25px; */
+  /* border: 1px solid black; */
+}
+
+.square_forChangeBox {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  margin: 20px auto;
+  border-radius: 25px;
+}
+
+#changeBox1{
+    background: white;
+}
+
+#changeBox2{
+    background: pink;
+}
+#changeBox3{
+    background: gray;
+}
+#changeBox4{
+    background: pink;
+}
+
+#changeBoxforRoll{
+    background: pink;
+}
+
+#square1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#square2{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#square3{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  /* border: 1px solid; */
+}
+
+#colorButtons{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  /* border: 1px solid; */
+}
+
+#square4{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#targetSquare{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+}
+
+#bottomspace{
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  margin: 100px;
+  padding: 100px;
+}
+
+#secretLetters{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+
+}
+
+.overRoll_forLetter {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#L1{
+  visibility: visible;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  overflow: hidden;
+}
+
+#A{
+  visibility: hidden;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  overflow: hidden;
+}
+
+#B{
+  visibility: hidden;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  overflow: hidden;
+}
+
+#C{
+  visibility: hidden;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  overflow: hidden;
 }
 
 
 
+#titleBar {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* border: 1px solid; */
+  border-bottom: 1px solid blue;
+  align-self: center;
+  text-align: left;
+}
+
+#titleBar2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  /* border: 1px solid; */
+  border-bottom: 1px solid blue;
+  align-self: center;
+  text-align: left;
+}
+
+#titleBar3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  /* border: 1px solid; */
+  border-bottom: 1px solid blue;
+  align-self: center;
+  text-align: left;
+}
+
+.droptarget {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+  background-color: white;
+  align-content: center;
+}
+
+#BBall{
+  width: 50px;
+  height: auto;
+  color: red;
+  margin-left: 30px;
+}
+
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
 
 /*  Ugh - I can't get the footer to be on the bottom */
 #myFooter{
@@ -711,6 +917,23 @@ h1 {
     border-radius: 3px;
     width: 100px;
   }
+
+  #colorButtons li {
+      list-style-type: none;
+      /* display: grid; */
+      /* margin:3px;*/
+      /* mmargin-top: 12px;*/
+      /* mpadding: 6px; */
+      /* malign-content: flex-start;
+      /* overflow: hidden; */
+      /* background-color: #ffffff; */
+      /* border-radius: 10px; */
+      /* width: 100%; */
+      /* float: left; */
+      /* border: 6px solid #ffffff; */
+      /* border-radius: 3px; */
+      /* width: 100px; */
+    }
 
   li a {
     display: block;
