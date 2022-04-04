@@ -159,14 +159,14 @@ ul.skills{
   grid-row-start: 5;
 }
 
-#bottomspace{
+/* #bottomspace{
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 6;
   grid-row-end: 7;
   margin: 100px;
   padding: 100px;
-}
+} */
 
 #secretLetters{
   grid-column-start: 3;

@@ -69,4 +69,5 @@ buttonguess.onclick = function check(){
     text = "Hmmm...  Maybe you should review the letters again.";
   }
   document.getElementById("demo").innerHTML = text;
+  alert(text);
 }
