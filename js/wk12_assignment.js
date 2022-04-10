@@ -13,8 +13,8 @@ const whoButton = document.querySelector('#who');
 //What is the difference between let, var, and const
 
 quoteButton.addEventListener('click',getQuote);
-quoteButton.addEventListener('click',showWho);
-// whoButton.addEventListener('click',showWho);
+// quoteButton.addEventListener('click',showWho);
+whoButton.addEventListener('click',showWho);
 
 //This function is asynchronous.
 //This means means we can use the 'await' keyword below it.
