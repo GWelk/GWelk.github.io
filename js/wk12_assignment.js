@@ -6,7 +6,6 @@
 // var quoteButton = document.getelementbyid('js-new-quote');
 // var quoteButton = document.queryselector('#js-new-quote');
 // let quoteButton = document.queryselector('#js-new-quote');
-var whosaidit = null;
 const quoteButton = document.querySelector('#js-new-quote');
 const whoButton = document.querySelector('#who');
 
@@ -14,7 +13,8 @@ const whoButton = document.querySelector('#who');
 //What is the difference between let, var, and const
 
 quoteButton.addEventListener('click',getQuote);
-whoButton.addEventListener('click',printCharacter);
+quoteButton.addEventListener('click',showWho);
+// whoButton.addEventListener('click',showWho);
 
 //This function is asynchronous.
 //This means means we can use the 'await' keyword below it.
@@ -47,6 +47,9 @@ async function getQuote () {
     var whosaidit = (json.character);
     console.log(whosaidit);
     // printCharacter(whosaidit);
+    document.querySelector('#whichFriend').textContent = whosaidit;
+    document.querySelector('#whichFriend').style.display = "none";
+    // document.querySelector('#whichFriend').style.display = "block";
   } catch(err) {
       console.log(err);
       alert('Failed');
@@ -64,8 +67,9 @@ function displayQuote(quote) {
   document.querySelector('#js-quote-text').textContent = quote;
 }
 
-function printCharacter(whosaidit) {
-  document.querySelector('#whichFriend').textContent = whosaidit;
+function showWho() {
+  document.querySelector('#whichFriend').style.display = "block";
+  // document.querySelector('#whichFriend').textContent = whosaidit;
 }
 
 //const endpoint ='https://random-quote-generator.herokuapp.com/api/quotes/random'
