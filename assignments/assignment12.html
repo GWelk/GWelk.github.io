@@ -4,37 +4,95 @@
     <meta charset="utf-8">
     <title>Week 12 Assignment -- Quote Machine</title>
     <script defer src="../js/wk12_assignment.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="../css/week12-demo.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Devonshire&family=Mrs+Sheppards&family=Pragati+Narrow:wght@400;700&family=Praise&family=Rock+Salt&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <div id="myLinks">
-      <a href="index.html" class="simpleTitle"><h2>Gena Welk </h2> <p class="simple">| UX</p></a>
       <ul>
+        <a href="../../index.html" class="simpleTitle"><h2>Gena Welk </h2> <p class="simple">| UX</p></a>
 
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="cv.html">Resume</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+      <li><a href="../../cv.html">Resume</a></li>
+      <li><a href="../../about.html">About</a></li>
+      <li><a href="../../projects.html">Projects</a></li>
       <!-- <li><a href="index.html">Home</a><li> -->
       </ul>
     </div>
 
-    <div class="app">
-      <header>Random Cat Quote Generator</header>
 
-        <section class="quotes">
-          <div class="quote-text" id="js-quote-text"></div>
-        </section>
+    <div class="quoteContainer">
+      <div class="space">
+      </div>
 
-        <section class="controls">
-          <button type="button" id="js-new-quote" class="new-quote button">
-            Generate a new quote
-          </button>
-        </section>
 
-    </div>
+      <div class="app">
+          <header class="friendFont">F
+            <p class="reddot">•</p>
+            R
+            <p class="yellowdot">•</p>
+            I
+            <p class="bluedot">•</p>
+            E
+            <p class="reddot">•</p>
+            N
+            <p class="yellowdot">•</p>
+            D
+            <p class="bluedot">•</p>
+            S</header>
+
+
+            <section class="quotes">
+              <div class="quote-text" id="js-quote-text">
+                <!-- quote will display here -->
+              </div>
+            </section>
+
+            <section class="controls">
+              <button type="button" id="js-new-quote" class="new-quote button">
+                Click for a quote
+            </section>
+        </div>
+
+        <div class="space">
+        </div>
+
+        <div class="app2">
+          <header class="friendFont">Who Said It?
+          </header>
+
+            <section class="quotes">
+              <div class="quote-text" id="whichFriend">
+                <!-- quote will display here -->
+              </div>
+            </section>
+
+            <section class="controls">
+              <button type="button" id="who" class="new-quote button">
+                Which friend?
+            </section>
+
+        </div>
+
+
+      </div>
+
+
+
+
+    <!-- Footer goes here  -->
+    <!-- Footer is hidden on mobile -->
+    <footer id="myFooter">
+      <p> &#169; 2022 | ATLS2200 </p>
+    </footer>
+    <!-- Footer end - - -  -->
+
+
+
+
+
+
+
   </body>
 </html>
-
-<!-- https://random-quote-generator.herokuapp.com/api/quotes/random -->
