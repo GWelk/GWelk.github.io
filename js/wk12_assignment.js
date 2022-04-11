@@ -17,6 +17,7 @@ const RossBtn = document.querySelector('#Ross');
 
 document.querySelector('#Right').style.display = "none";
 document.querySelector('#Wrong').style.display = "none";
+document.querySelector('.friendButtons').style.display = "none";
 
 //What is the difference between queryselector or getelementbyid
 //What is the difference between let, var, and const
@@ -40,6 +41,7 @@ async function getQuote () {
   //We can see what's happening by viewing the log.
   console.log("quote button was clicked");
   clearOld();
+  document.querySelector('.friendButtons').style.display = "block";
   // The `try` block executes the statements within.
   // If an exception is thrown (if the variable 'response' is not ok,
   //it will throw an error - I am not exactly sure what response.statusText is),

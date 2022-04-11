@@ -1565,3 +1565,8 @@ input[type=reset]:hover {
      font-size: 18px;
    }
  }
+
+ .resultSection {
+   height: 200px;
+   display: block;
+ }
