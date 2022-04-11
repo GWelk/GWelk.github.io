@@ -7,14 +7,29 @@
 // var quoteButton = document.queryselector('#js-new-quote');
 // let quoteButton = document.queryselector('#js-new-quote');
 const quoteButton = document.querySelector('#js-new-quote');
-const whoButton = document.querySelector('#who');
+// const whoButton = document.querySelector('#who');
+const ChandBtn = document.querySelector('#Chandler');
+const JoeBtn = document.querySelector('#Joey');
+const MonBtn = document.querySelector('#Monica');
+const PhoebBtn = document.querySelector('#Phoebe');
+const RaBtn = document.querySelector('#Rachel');
+const RossBtn = document.querySelector('#Ross');
+
+document.querySelector('#Right').style.display = "none";
+document.querySelector('#Wrong').style.display = "none";
 
 //What is the difference between queryselector or getelementbyid
 //What is the difference between let, var, and const
 
 quoteButton.addEventListener('click',getQuote);
 // quoteButton.addEventListener('click',showWho);
-whoButton.addEventListener('click',showWho);
+// whoButton.addEventListener('click',showWho);
+ChandBtn.addEventListener('click',selectChandler);
+JoeBtn.addEventListener('click',selectJoey);
+MonBtn.addEventListener('click',selectMonica);
+PhoebBtn.addEventListener('click',selectPhoebe);
+RaBtn.addEventListener('click',selectRachel);
+RossBtn.addEventListener('click',selectRoss);
 
 //This function is asynchronous.
 //This means means we can use the 'await' keyword below it.
@@ -24,7 +39,7 @@ async function getQuote () {
   //This line isn't necessary, but is a debug tool.
   //We can see what's happening by viewing the log.
   console.log("quote button was clicked");
-
+  clearOld();
   // The `try` block executes the statements within.
   // If an exception is thrown (if the variable 'response' is not ok,
   //it will throw an error - I am not exactly sure what response.statusText is),
@@ -71,6 +86,89 @@ function showWho() {
   document.querySelector('#whichFriend').style.display = "block";
   // document.querySelector('#whichFriend').textContent = whosaidit;
 }
+
+function clearOld() {
+  document.querySelector('#Right').style.display = "none";
+  document.querySelector('#Wrong').style.display = "none";
+  document.querySelector('#whichFriend').style.display = "none";
+}
+
+function selectChandler() {
+  // console.log('Chandler was clicked');
+  var wwho = document.querySelector('#whichFriend').textContent;
+  // console.log(wwho);
+  if (wwho == 'Chandler') {
+    // console.log('match');
+    document.querySelector('#Right').style.display = "block";
+    showWho();
+  } else {
+    console.log('not a match');
+    document.querySelector('#Wrong').style.display = "block";
+    showWho();
+  }
+}
+
+function selectJoey() {
+  var wwho = document.querySelector('#whichFriend').textContent;
+  if (wwho == 'Joey') {
+    document.querySelector('#Right').style.display = "block";
+    showWho();
+  } else {
+    console.log('not a match');
+    document.querySelector('#Wrong').style.display = "block";
+    showWho();
+  }
+}
+
+function selectMonica() {
+  var wwho = document.querySelector('#whichFriend').textContent;
+  if (wwho == 'Monica') {
+    document.querySelector('#Right').style.display = "block";
+    showWho();
+  } else {
+    console.log('not a match');
+    document.querySelector('#Wrong').style.display = "block";
+    showWho();
+  }
+}
+
+function selectPhoebe() {
+  var wwho = document.querySelector('#whichFriend').textContent;
+  if (wwho == 'Phoebe') {
+    document.querySelector('#Right').style.display = "block";
+    showWho();
+  } else {
+    console.log('not a match');
+    document.querySelector('#Wrong').style.display = "block";
+    showWho();
+  }
+}
+
+function selectRachel() {
+  var wwho = document.querySelector('#whichFriend').textContent;
+  if (wwho == 'Rachel') {
+    document.querySelector('#Right').style.display = "block";
+    showWho();
+  } else {
+    console.log('not a match');
+    document.querySelector('#Wrong').style.display = "block";
+    showWho();
+  }
+}
+
+function selectRoss() {
+  var wwho = document.querySelector('#whichFriend').textContent;
+  if (wwho == 'Ross') {
+    document.querySelector('#Right').style.display = "block";
+    showWho();
+  } else {
+    console.log('not a match');
+    document.querySelector('#Wrong').style.display = "block";
+    showWho();
+  }
+}
+
+
 
 //const endpoint ='https://random-quote-generator.herokuapp.com/api/quotes/random'
 //const endpoint = 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1'

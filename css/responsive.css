@@ -1459,7 +1459,7 @@ input[type=reset]:hover {
    font-size: 30px;
    text-align: center;
    padding: 10px;
-   border-radius: 5px;
+   border-radius: 5px 5px 0  0;
    /* border-bottom: 1px solid #ebebeb; */
  }
  .quotes {
@@ -1469,6 +1469,19 @@ input[type=reset]:hover {
  .quote-text {
    padding-bottom: 20px;
    font-size: 25px;
+   color: #292C7F;
+ }
+
+ .quote-text2 {
+   padding-bottom: 20px;
+   font-size: 25px;
+   color: #292C7F;
+
+ }
+
+ .revealtext {
+   /* padding-bottom: 20px; */
+   font-size: 15px;
    color: #292C7F;
  }
  .controls {
@@ -1492,11 +1505,12 @@ input[type=reset]:hover {
 .friendButton {
   display: block;
   background-color: #d0ebff;
-  font-family: "Rock Salt", "Helvetica Neue", sans-serif;
+  font-family: "Pragati", "Helvetica Neue", sans-serif;
   color: #292C7F;
   border-radius: 4px;
-  padding: 10px 20px;
-  margin: 25px;
+  /* padding: 10px 20px; */
+  padding: 5px;
+  margin: 10px;
   cursor: pointer;
   text-align: center;
   width: 100%;
