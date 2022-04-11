@@ -11,6 +11,8 @@
 
     <div id="myLinks">
       <ul>
+        <!--This does not pass the validator-->
+        <!-- It says  Element a not allowed as child of element ul in this context.    -->
         <a href="../../index.html" class="simpleTitle"><h2>Gena Welk </h2> <p class="simple">| UX</p></a>
 
       <li><a href="../../contact.html">Contact</a></li>
@@ -43,16 +45,16 @@
             S</header>
 
 
-            <section class="quotes">
+            <div class="quotes">
               <div class="quote-text" id="js-quote-text">
                 <!-- quote will display here -->
               </div>
-            </section>
+            </div>
 
-            <section class="controls">
+            <div class="controls">
               <button type="button" id="js-new-quote" class="new-quote button">
-                Click for a quote
-            </section>
+                Click for a quote</button>
+            </div>
         </div>
 
         <div class="space">
@@ -63,7 +65,7 @@
           </header>
 
 
-              <section class="quotes">
+              <div class="quotes">
                 <div class="resultSection">
                   <div class="revealtext" id="Right">
                     <!-- div changes to block from hidden when called -->
@@ -87,7 +89,7 @@
                 <button type="button" class="friendButton mistyButton" id="Rachel">Rachel</button>
                 <button type="button" class="friendButton papayaButton" id="Ross">Ross</button>
               </div>
-            </section>
+            </div>
 
             <!-- <section class="controls">
               <button type="button" id="who" class="new-quote button">
@@ -99,7 +101,7 @@
         <div class="space">
         </div>
 
-        <section id="explain">
+        <div id="explain">
           <!--Directions from the assignment-->
           <!-- Extend the quote machine in some way using a combination of JavaScript, CSS and HTML
           Include a short paragraph at the bottom of the page explaining what your extension is -->
@@ -110,11 +112,14 @@
           If they click the wrong name, they are gently informed of the correct character.
         </p>
         <p class="conclusion">
-          Aesthetic improvements are still needed on this page.  This includes spacing, centering, fixed heights, and responsive to screen size.
+          Still to do: <br>
+          Aesthetic improvements are still needed on this page.  This includes spacing, centering, fixed heights, and being responsive to screen size.
+          <br>
+          Also, I need to somehow reflect to the user which answer they clicked - beyond just telling them they were right or wrong. (perhaps by creating an active state of the button of the clicked character).
         </p>
 
 
-        </section>
+      </div>
 
       </div>
 

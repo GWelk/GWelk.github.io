@@ -36,7 +36,7 @@ RossBtn.addEventListener('click',selectRoss);
 //This means means we can use the 'await' keyword below it.
 //Await will pause the funtion while waiting for an operation to complete.
 //More info here:  https://javascript.info/async-await
-async function getQuote () {
+async function getQuote() {
   //This line isn't necessary, but is a debug tool.
   //We can see what's happening by viewing the log.
   console.log("quote button was clicked");
@@ -49,9 +49,7 @@ async function getQuote () {
   // the `catch` block will be executed.
   // More info is here: https://javascript.info/try-catch
   try {
-    const response = await fetch(endpoint,
-      // {credentials: 'include'}
-    );
+    const response = await fetch(endpoint);
     // If the response is not 200 OK...
       if (!response.ok){
         // ...throw an error. This causes control flow
