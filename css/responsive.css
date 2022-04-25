@@ -70,6 +70,31 @@ ul.skills{
   border-radius: 25px;
 } */
 
+/*----start of: word game styles*/
+.wordGameContainer {
+  display: grid;
+  grid-template-columns: 10% auto auto 10%;
+  grid-auto-rows: 20% auto auto auto 20% 50px 50px;
+  padding: 20px;
+  column-gap: 50px;
+  row-gap: 50px;
+  /* border: 1px solid black; */
+}
+
+.wordGameContainer > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  height:300px;
+}
+
+.box-spacer {
+  background-color: white;
+}
+
+/*----end of: word game styles*/
+
 .container_of_squares {
   display: grid;
   grid-template-columns: 20% auto auto 20%;
