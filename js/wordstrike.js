@@ -29,7 +29,21 @@ let wordCollection = [
     "category": "Rhyme Time",
     "source": "Wheel of Fortune"
     },
+    {"theAnswer": "Frankly My Dear I Don't Give A Damn",
+    "category": "Movie Quotes",
+    "source": "Wheel of Fortune"
+    },
+    {"theAnswer": "Lions And Tigers And Bears Oh My",
+    "category": "Movie Quotes",
+    "source": "Wheel of Fortune"
+    },
+    {"theAnswer": "Keep The Change Ya Filthy Animal",
+    "category": "Movie Quotes",
+    "source": "Wheel of Fortune"
+    }
   ]
+
+  // Phrases come from:  https://wheeloffortuneanswer.com/
 
 const wordCollectionLength = (wordCollection.length);
 let randNumber = Math.floor(Math.random() * wordCollectionLength);
