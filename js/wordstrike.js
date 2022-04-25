@@ -32,18 +32,21 @@ let wordCollection = [
   ]
 
 const wordCollectionLength = (wordCollection.length);
-const randNumber = Math.floor(Math.random() * wordCollectionLength);
+let randNumber = Math.floor(Math.random() * wordCollectionLength);
 
 document.querySelector('#newGame').addEventListener('click',getRandNumber);
 
 
 function getRandNumber(){
+  console.log("You clicked to start a new game.");
   randNumber = Math.floor(Math.random() * wordCollectionLength);
-  return randNumber;
+  console.log(randNumber);
+  console.log(wordCollection[randNumber].theAnswer);
+  outputWord(randNumber);
 }
 
 function outputWord(randNumber) {
-  const wordText = document.getelementbyid('#theWord').textContent;
+   wordText = document.querySelector('#theWord').textContent;
   wordText = wordCollection[randNumber].theAnswer;
 }
 
