@@ -57,12 +57,23 @@ function getRandNumber(){
   console.log(randNumber);
   console.log(wordCollection[randNumber].theAnswer);
   outputWord(randNumber);
+  outputCategory(randNumber);
 }
 
 function outputWord(randNumber) {
-   wordText = document.querySelector('#theWord').textContent;
+  let wordText;
   wordText = wordCollection[randNumber].theAnswer;
+  document.querySelector('#theWord').textContent = wordText;
+}
+
+function outputCategory(randNumber) {
+  let wordCategory;
+  wordCategory = wordCollection[randNumber].category;
+  document.querySelector('#theCategory').textContent = wordCategory;
 }
 
   console.log(randNumber);
   console.log(wordCollection[randNumber].theAnswer);
+  console.log(wordCollection[randNumber].category);
+console.log(document.querySelector('#theCategory').textContent);
+console.log(wordCollection[randNumber].theAnswer.length);
