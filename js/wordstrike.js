@@ -49,6 +49,15 @@ const wordCollectionLength = (wordCollection.length);
 let randNumber = Math.floor(Math.random() * wordCollectionLength);
 
 document.querySelector('#newGame').addEventListener('click',getRandNumber);
+document.querySelector('#a').addEventListener('click', function() {
+  guessaLetter("a");
+});
+document.querySelector('#b').addEventListener('click', function() {
+  guessaLetter("b");
+});
+document.querySelector('#c').addEventListener('click', function() {
+  guessaLetter("c");
+});
 
 
 function getRandNumber(){
@@ -63,8 +72,44 @@ function getRandNumber(){
 function outputWord(randNumber) {
   let wordText;
   wordText = wordCollection[randNumber].theAnswer;
-  document.querySelector('#theWord').textContent = wordText;
+  // document.querySelector('#theWord').textContent = wordText;
+  let wordTextArray = new Array();
+  wordTextArray = wordText.split('');
+  console.log(wordTextArray);
+  printStartingWord(wordTextArray);
 }
+
+
+function printStartingWord(openingText) {
+  let startingText = document.querySelector('#theWord').textContent;
+  for (let i = 0; i < openingText.length; i++) {
+    // console.log(openingText[i]);
+  if (openingText[i] != ' ') {
+    // console.log(openingText[i]);
+    document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent+"_ ";
+    // console.log(startingText);
+  } else {
+    document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent + '   ' ;
+  }
+}
+}
+
+function guessaLetter(theGuess) {
+  console.log(theGuess);
+  // let wordText;
+  wordText = wordCollection[randNumber].theAnswer;
+  for (let i = 0; i < wordText.length; i++) {
+    console.log(wordText[i]);
+    // console.log(wordText[i].toUpperCase);
+  if (wordText[i] == theGuess) {
+    console.log("Match!" + wordText[i]);
+} else {
+  wordText[i] = wordText[i];
+}
+}
+}
+
+
 
 function outputCategory(randNumber) {
   let wordCategory;
@@ -72,8 +117,8 @@ function outputCategory(randNumber) {
   document.querySelector('#theCategory').textContent = wordCategory;
 }
 
-  console.log(randNumber);
-  console.log(wordCollection[randNumber].theAnswer);
-  console.log(wordCollection[randNumber].category);
-console.log(document.querySelector('#theCategory').textContent);
-console.log(wordCollection[randNumber].theAnswer.length);
+//   console.log(randNumber);
+//   console.log(wordCollection[randNumber].theAnswer);
+//   console.log(wordCollection[randNumber].category);
+// console.log(document.querySelector('#theCategory').textContent);
+// console.log(wordCollection[randNumber].theAnswer.length);
