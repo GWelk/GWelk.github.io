@@ -94,15 +94,25 @@ function printStartingWord(openingText) {
 }
 }
 
+function printNewText(openingText) {
+  startingText = document.querySelector('#theWord').textContent;
+  //for each letter in the openingText, if it matches the guessed letter, change it to guessed letter.
+  //if it doesn't match, then let it stay '_'
+  console.log("the printNew Text function was called for letter " + openingText);
+  console.log(startingText);
+}
+
 function guessaLetter(theGuess) {
   console.log(theGuess);
   // let wordText;
-  wordText = wordCollection[randNumber].theAnswer;
+  wordText = wordCollection[randNumber].theAnswer.toLowerCase();
   for (let i = 0; i < wordText.length; i++) {
     console.log(wordText[i]);
     // console.log(wordText[i].toUpperCase);
   if (wordText[i] == theGuess) {
     console.log("Match!" + wordText[i]);
+    printNewText(wordText[i]);
+    //This works!  Now I need to replace the _ with the guessed letter in the phrase as it is printed on the screen
 } else {
   wordText[i] = wordText[i];
 }
