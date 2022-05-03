@@ -135,10 +135,13 @@ function rebuildWGuess () {
             console.log('you got here ' + wordTextArray[i]);
             if (usedLetters[j] == wordTextArray[i]) {
               console.log("Match!" + j);
+            }else{
+              console.log("No match" + i);
+            }
       }
     }
 }
-}
+
 
 
 
