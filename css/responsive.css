@@ -16,13 +16,7 @@ h1, h2 {
   color: #292C7F;
 }
 
-iframe {
-  width: 800px;
-  height: 800px;
-  border: solid 3px navy;
-  justify-content: center;
 
-}
 
 .primg {
   max-width: 200px;
@@ -398,6 +392,14 @@ ul.skills{
 
   body {
     background-color: #2998ff; /* medium blue */
+  }
+
+  iframe {
+    width: 300px;
+    height: 300px;
+    border: solid 3px navy;
+    justify-content: center;
+
   }
 
 /* Style the navigation menu */
@@ -920,6 +922,14 @@ h1 {
 
 .test {
   display: none;
+}
+
+iframe {
+  width: 800px;
+  height: 900px;
+  border: solid 3px navy;
+  justify-content: center;
+
 }
 
   p, li {
