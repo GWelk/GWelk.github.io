@@ -61,7 +61,7 @@ function newGame() {
   // console.log("You clicked to start a new game.");
   let startingText = [];
   let wordText = '';
-  let wordTextArray = [];
+  // let wordTextArray = [];
   document.querySelector('#theWord').textContent = '';
   document.querySelector('#unusedLetters').textContent = '';
   getRandNumber();
@@ -161,7 +161,7 @@ function guessaLetter(theGuess) {
 
   //(otherwise continue)
   //move the letter from unused to Used - or deactivate it
-  usedLetters.push(theGuess);
+  usedLetters.push(theGuess.trim());
   console.log(usedLetters);
   printUsedAlpha();
   rebuildWGuess();
@@ -173,7 +173,7 @@ function printUsedAlpha() {
   usedLettersList.innerHTML = "";
   for (const x of usedLetters) {
     //show the used letters on screen
-    uUsedLetters = "<li class='simple' id='" + x+ "'> " + x+ " </li>";
+    uUsedLetters = "<li class='simple' id='" +x+ "'> "+x+" </li>";
     usedLettersList.innerHTML += uUsedLetters;
   }
 }
