@@ -55,16 +55,7 @@ const wordCollectionLength = (wordCollection.length);
 let randNumber = Math.floor(Math.random() * wordCollectionLength);
 
 document.querySelector('#newGame').addEventListener('click',newGame);
-// document.querySelector('#unusedLetters').addEventListener('click',callLetter);
-// document.querySelector('#a').addEventListener('click', function() {
-//   guessaLetter("a");
-// });
-// document.querySelector('#b').addEventListener('click', function() {
-//   guessaLetter("b");
-// });
-// document.querySelector('#c').addEventListener('click', function() {
-//   guessaLetter("c");
-// });
+
 
 function newGame() {
   // console.log("You clicked to start a new game.");
@@ -72,6 +63,7 @@ function newGame() {
   let wordText = '';
   let wordTextArray = [];
   document.querySelector('#theWord').textContent = '';
+  document.querySelector('#unusedLetters').textContent = '';
   getRandNumber();
   console.log(randNumber);
   console.log(wordCollection[randNumber].theAnswer);
@@ -83,16 +75,6 @@ function newGame() {
 function getRandNumber(){
   randNumber = Math.floor(Math.random() * wordCollectionLength);
 }
-
-// function printStartingAlpha() {
-//   let availableLetters = "";
-//   for (const x of startingAlphabet) {
-//     availableLetters += x + " ";
-//   }
-//   // document.getElementById('#unusedLetters').textContent = availableLetters;
-//   console.log(availableLetters);
-//   document.getElementById('unusedLetters').textContent = availableLetters;
-// }
 
 var letterUL = document.getElementById('unusedLetters');
 function printStartingAlpha() {
@@ -106,14 +88,17 @@ function printStartingAlpha() {
   }
 }
 
-function callLetter (axc) {
-  console.log("a letter was clicked " + axc);
+function callLetter(event) {
+  let target = event.target || event.srcElement;
+  guessaLetter(event.target.innerHTML);
+
 }
+
 
 function outputWord(randNumber) {
   let wordText;
   wordText = wordCollection[randNumber].theAnswer;
-  let wordTextArray = new Array();
+  let WordTextArray = new Array();
   wordTextArray = wordText.split('');
   printStartingWord(wordTextArray);
 }
@@ -135,51 +120,60 @@ function printStartingWord(openingText) {
 }
 
 let reText = [];
+function rebuildWGuess () {
 
-//This sort of works.  The problem is that it appends the reText to the first reText -
-//so blank letters get added infinitely.
-//Instead I need to keep the letters already guessed and the 'just guessed' letter.
-function guessaLetter(theGuess) {
-  //move the letter from unused to Used
-  usedLetters.push(theGuess);
-  console.log(usedLetters);
+  // for each letter in the phrase, check to see if
+  // the letter is in the used array.
+  //If no, add a _ to that position in the array.
+  //If yes, add add the letter to that position in the Array.
+  //Show the new phrase with the guessed and unguessed letters - by printing to innerHTML.
 
-  //if the letter is not already in the used array,
-  //add it to the used array.
-  // console.log(usedLetters.length);
-  // if (usedLetters.length > 0) {
-  // if (usedLetters.find(theGuess) == true {
-  //   "You "
-  // }
-  //   for (let i = 0; i < usedLetters.length; i++) {
-  //       if (usedLetters[i] == theGuess) {
-  //         console.log('That is a re-guess of ' + theGuess);
-  //       } else {
-  //         usedLetters.push = theGuess;
-  //         console.log('you have this many used letters' + usedLetters.length);
-  //       }
-  //   }
+// console.log(wordTextArray);
 
-
-function printUsedAlpha() {
-  for (const x of usedLetters) {
-    //show the used letters on screen
-  }
+      for (let i = 0; i < wordTextArray.length; i++) {
+        for (let j = 0; j < usedLetters.length; j++) {
+            console.log('you got here' + usedLetters);
+            console.log('you got here' + wordTextArray);
+            if (wordTextArray[i] === usedLetters[j]) {
+              console.log("Match!" + j);
+      }
+    }
+}
 }
 
-  wordText = wordCollection[randNumber].theAnswer.toLowerCase();
-  for (let i = 0; i < wordText.length; i++) {
-    // console.log(wordText[i]);
-      if (wordText[i] == theGuess) {
-      // console.log("Match!" + wordText[i]);
-      reText = reText + theGuess;
-      } else if (wordText[i] == ' ') {
-      reText = reText + '   ';
-      } else {
-      reText = reText + ' _ ';
-      }
+
+
+
+
+
+
+function guessaLetter(theGuess) {
+    //if the letter is already in the usedLetters array, exit function.
+
+  // let includesGuess = usedLetters.includes(theGuess);
+  // console.log(includesGuess);
+
+  if (usedLetters.includes(theGuess) == true) {
+    return;
   }
-  document.querySelector('#theWord').textContent = reText;
+
+  //(otherwise continue)
+  //move the letter from unused to Used - or deactivate it
+  usedLetters.push(theGuess);
+  console.log(usedLetters);
+  printUsedAlpha();
+  rebuildWGuess();
+}
+
+
+var usedLettersList = document.getElementById('usedLetters');
+function printUsedAlpha() {
+  usedLettersList.innerHTML = "";
+  for (const x of usedLetters) {
+    //show the used letters on screen
+    uUsedLetters = "<li class='simple' id='" + x+ "'> " + x+ " </li>";
+    usedLettersList.innerHTML += uUsedLetters;
+  }
 }
 
 
