@@ -121,7 +121,6 @@ function printStartingWord(openingText) {
 
 let reText = [];
 function rebuildWGuess () {
-
   // for each letter in the phrase, check to see if
   // the letter is in the used array.
   //If no, add a _ to that position in the array.
@@ -132,9 +131,9 @@ function rebuildWGuess () {
 
       for (let i = 0; i < wordTextArray.length; i++) {
         for (let j = 0; j < usedLetters.length; j++) {
-            console.log('you got here' + usedLetters);
-            console.log('you got here' + wordTextArray);
-            if (wordTextArray[i] === usedLetters[j]) {
+            console.log('you got here ' + usedLetters[j]);
+            console.log('you got here ' + wordTextArray[i]);
+            if (usedLetters[j] == wordTextArray[i]) {
               console.log("Match!" + j);
       }
     }
