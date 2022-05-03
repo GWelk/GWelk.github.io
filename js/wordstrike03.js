@@ -84,19 +84,29 @@ function getRandNumber(){
   randNumber = Math.floor(Math.random() * wordCollectionLength);
 }
 
+// function printStartingAlpha() {
+//   let availableLetters = "";
+//   for (const x of startingAlphabet) {
+//     availableLetters += x + " ";
+//   }
+//   // document.getElementById('#unusedLetters').textContent = availableLetters;
+//   console.log(availableLetters);
+//   document.getElementById('unusedLetters').textContent = availableLetters;
+// }
+
+var letterUL = document.getElementById('unusedLetters');
 function printStartingAlpha() {
   let availableLetters = "";
   for (const x of startingAlphabet) {
-    availableLetters += x + " ";
+    availableLetters = "<li class='simple' id='" + x+ "'> " + x+ " </li>";
+    letterUL.innerHTML += availableLetters;
   }
-  // document.getElementById('#unusedLetters').textContent = availableLetters;
-  console.log(availableLetters);
-  document.getElementById('unusedLetters').textContent = availableLetters;
+  document.querySelector('#a').addEventListener('click',callLetter);
 }
 
-// function callLetter (axc) {
-//   console.log("a letter was clicked " + axc);
-// }
+function callLetter (axc) {
+  console.log("a letter was clicked " + axc);
+}
 
 function outputWord(randNumber) {
   let wordText;
