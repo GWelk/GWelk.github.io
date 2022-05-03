@@ -97,7 +97,7 @@ function callLetter(event) {
 
 function outputWord(randNumber) {
   let wordText;
-  wordText = wordCollection[randNumber].theAnswer;
+  wordText = wordCollection[randNumber].theAnswer.toLowerCase();
   let WordTextArray = new Array();
   wordTextArray = wordText.split('');
   printStartingWord(wordTextArray);
@@ -119,7 +119,7 @@ function printStartingWord(openingText) {
 }
 }
 
-let reText = [];
+// let reText = [];
 function rebuildWGuess () {
   // for each letter in the phrase, check to see if
   // the letter is in the used array.
@@ -128,24 +128,21 @@ function rebuildWGuess () {
   //Show the new phrase with the guessed and unguessed letters - by printing to innerHTML.
 
 // console.log(wordTextArray);
-
+// document.querySelector('#theWord').textContent = "";
       for (let i = 0; i < wordTextArray.length; i++) {
         for (let j = 0; j < usedLetters.length; j++) {
             console.log('you got here ' + usedLetters[j]);
             console.log('you got here ' + wordTextArray[i]);
             if (usedLetters[j] == wordTextArray[i]) {
               console.log("Match!" + j);
+              document.querySelector('#theWord').textContent += wordTextArray[i];
             }else{
               console.log("No match" + i);
+              document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent+"_ ";
             }
       }
     }
 }
-
-
-
-
-
 
 
 
@@ -155,7 +152,7 @@ function guessaLetter(theGuess) {
   // let includesGuess = usedLetters.includes(theGuess);
   // console.log(includesGuess);
 
-  if (usedLetters.includes(theGuess) == true) {
+  if (usedLetters.includes(theGuess.trim()) == true) {
     return;
   }
 
