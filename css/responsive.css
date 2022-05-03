@@ -30,6 +30,7 @@ h1, h2 {
   display: inline;
   /* why can't I get it to center vertically?????? */
   margin-top: 100px;
+  vertical-align: middle;
   /* align-items:flex-end; */
   /* height: 200px; */
   /* margin-top: 20%; */
@@ -378,6 +379,7 @@ ul.skills{
   background-color: #292c7f;
 }
 
+
 .flex_item_subTitle {
   min-height: 200px;
   font-family: 'Pragati Narrow', sans-serif;
@@ -584,6 +586,7 @@ h1 {
    display: inline;
    font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
    text-decoration: none;
+   vertical-align: middle;
 
 }
 
@@ -924,6 +927,8 @@ h1 {
   display: none;
 }
 
+
+
 iframe {
   width: 800px;
   height: 900px;
@@ -989,7 +994,7 @@ iframe {
     float: right;
     border: 6px solid #ffffff;
     border-radius: 3px;
-    width: 100px;
+    width: 150px;
   }
 
   .testingli{
@@ -1134,6 +1139,7 @@ h1 {
     display: inline;
     font-family: 'Pragati Narrow', Arial, Helvetica, sans-serif;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 
