@@ -100,8 +100,9 @@ function printStartingAlpha() {
   for (const x of startingAlphabet) {
     availableLetters = "<li class='simple' id='" + x+ "'> " + x+ " </li>";
     letterUL.innerHTML += availableLetters;
-    document.querySelector('#a').addEventListener('click',callLetter);
-    document.querySelector('#b').addEventListener('click',callLetter);
+    document.querySelectorAll('li').forEach(item => {
+      item.addEventListener('click', callLetter);
+    })
   }
 }
 

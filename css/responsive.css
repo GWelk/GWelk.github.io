@@ -315,7 +315,7 @@ ul.skills{
 
 /*  Ugh - I can't get the footer to be on the bottom */
 #myFooter{
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   height: 60px;
   margin-top: 62px;
@@ -538,6 +538,11 @@ margin-bottom: 25px;
  /* overflow-y: hidden; */
 }
 
+.primg {
+  max-width: 200px;
+  max-width: 200px;
+}
+
 
 .pageheadertitle{
  grid-column: 2/5;
@@ -646,7 +651,7 @@ h1 {
  img.aboutRounded {
    border-radius: 10px;
    height: auto;
-   width: 100%;
+
  }
 
 
@@ -1137,7 +1142,7 @@ h1 {
 img {
   width: auto;
   border-radius: 4px;
-  max-height: 200px;
+  /* max-height: 200px; */
 }
 
 img.contrast {
@@ -1171,14 +1176,11 @@ img.contrast {
     .aboutImg {
      grid-column: 2 / 3;
      grid-row: 1;
-     /* height: auto;
-     min-width: 200px;
-     max-width: 300px; */
-
     }
 
     img.aboutRounded {
       border-radius: 12px;
+      max-width: 400px;
     }
 
 
