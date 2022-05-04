@@ -58,20 +58,24 @@ const wordCollection = [
 const wordCollectionLength = (wordCollection.length);
 let randNumber = Math.floor(Math.random() * wordCollectionLength);
 
+//This event listener tells us when the user clicks to start a new game.
 document.querySelector('#newGame').addEventListener('click',newGame);
 
-
+//This function is called when starting a new game.
 function newGame() {
-  // console.log("You clicked to start a new game.");
   var startingText = [];
   var wordText = '';
-  // let wordTextArray = [];
+  // The line below empties out any word that may have been represented on the page
   document.querySelector('#theWord').textContent = '';
-  document.querySelector('#unusedLetters').textContent = '';
+  // document.querySelector('#unusedLetters').textContent = '';
+// The line below gets a random number, which will then be used to randomly select a phrase.
   getRandNumber();
   console.log(randNumber);
+  // The line below prints the answer to the console for testing.
   console.log(wordCollection[randNumber].theAnswer);
+  // The line below calls a function to show the blanks representing letters on the screen.
   outputWord(randNumber);
+  // The line below prints the category - a hint to the user.
   outputCategory(randNumber);
   printStartingAlpha();
 }
@@ -123,11 +127,15 @@ function printStartingWord(openingText) {
 }
 var reText = document.querySelector('#theWord').textContent
 // console.log(document.querySelector('#theWord').textContent);
-console.log(reText);
-var reTextArray = document.querySelector('#theWord').textContent.split('');
-console.log(reTextArray);
+// console.log(reText);
+// var reTextArray = document.querySelector('#theWord').textContent.split('');
+// console.log(reTextArray);
+displayReTextArray(reText);
 }
 
+function displayReTextArray(reText) {
+  document.querySelector('#theWord').textContent = reText;
+}
 
 
 // let reText = [];
@@ -145,14 +153,16 @@ function rebuildWGuess () {
             // console.log('you got here ' + usedLetters[j]);
             // console.log('you got here ' + wordTextArray[i]);
             if (usedLetters[j] == wordTextArray[i]) {
-              console.log("Match!" + i);
+              console.log("Letter Match! At Mystery Word index " + i);
+              // console.log(wordTextArray[i]);
               // console.log(usedLetters[j]);
-              // document.querySelector('#theWord').textContent += wordTextArray[i];
-            }else{
+              // document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent + wordTextArray[i];
+            // }else if (wordTextArray[i] == "  "){
+            //   console.log('a space!');
 
               // document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent+"_ ";
             }
-      } console.log("none");
+      }
     }
 
 }
