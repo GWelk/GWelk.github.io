@@ -1,4 +1,7 @@
 
+
+//This array of objects holds the phrases.
+//To add more phrases, hard code them in here.
 const wordCollection = [
     {
     "theAnswer": "Academic Scholarship",
@@ -25,7 +28,7 @@ const wordCollection = [
     "category": "Rhyme Time",
     "source": "Wheel of Fortune"
     },
-    {"theAnswer": "Chicken Wings & Onion Rings",
+    {"theAnswer": "Chicken Wings and Onion Rings",
     "category": "Rhyme Time",
     "source": "Wheel of Fortune"
     },
@@ -41,13 +44,14 @@ const wordCollection = [
     "category": "Movie Quotes",
     "source": "Wheel of Fortune"
     }
-  ]
+  ];
 
+//This populates the array that is the letters of the alphabet.
   let startingAlphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
-        't', 'u', 'v', 'w', 'x', 'y', 'z']
+        't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-  let usedLetters =[]
+  var usedLetters =[];
 
   // Phrases come from:  https://wheeloffortuneanswer.com/
 
@@ -59,8 +63,8 @@ document.querySelector('#newGame').addEventListener('click',newGame);
 
 function newGame() {
   // console.log("You clicked to start a new game.");
-  let startingText = [];
-  let wordText = '';
+  var startingText = [];
+  var wordText = '';
   // let wordTextArray = [];
   document.querySelector('#theWord').textContent = '';
   document.querySelector('#unusedLetters').textContent = '';
@@ -117,7 +121,14 @@ function printStartingWord(openingText) {
     document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent + '   ' ;
   }
 }
+var reText = document.querySelector('#theWord').textContent
+// console.log(document.querySelector('#theWord').textContent);
+console.log(reText);
+var reTextArray = document.querySelector('#theWord').textContent.split('');
+console.log(reTextArray);
 }
+
+
 
 // let reText = [];
 function rebuildWGuess () {
@@ -131,17 +142,19 @@ function rebuildWGuess () {
 // document.querySelector('#theWord').textContent = "";
       for (let i = 0; i < wordTextArray.length; i++) {
         for (let j = 0; j < usedLetters.length; j++) {
-            console.log('you got here ' + usedLetters[j]);
-            console.log('you got here ' + wordTextArray[i]);
+            // console.log('you got here ' + usedLetters[j]);
+            // console.log('you got here ' + wordTextArray[i]);
             if (usedLetters[j] == wordTextArray[i]) {
-              console.log("Match!" + j);
-              document.querySelector('#theWord').textContent += wordTextArray[i];
+              console.log("Match!" + i);
+              // console.log(usedLetters[j]);
+              // document.querySelector('#theWord').textContent += wordTextArray[i];
             }else{
-              console.log("No match" + i);
-              document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent+"_ ";
+
+              // document.querySelector('#theWord').textContent = document.querySelector('#theWord').textContent+"_ ";
             }
-      }
+      } console.log("none");
     }
+
 }
 
 

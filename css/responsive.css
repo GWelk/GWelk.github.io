@@ -72,17 +72,7 @@ ul.skills{
 
 
 /*-----------wordstrike css-----*/
-.strike {
-  display: inline;
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  opacity: 15%;
-  padding: 10px;
-  margin: 40px;
-  color: red;
-  font-weight: bolder;
-}
+
 
 .unusedLetters {
   display: inline;
@@ -109,17 +99,41 @@ ul.skills{
   /* border: 1px solid black; */
 }
 
+.strikeContainer {
+  display:flexbox;
+  height:300px;
+  width:300px;
+}
+
+
+/* .strikeContainer > div {
+  /* text-align: center; */
+  /* padding: 20px 0; */
+  /* border: 1px;
+  color: white;
+  font-size: 1.5em;
+} */
+
+.strike {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  opacity: 15%;
+  /* padding: 15px; */
+  margin: 20px;
+  color: white;
+  font-size: 1.5em;
+}
+
 .wordGameContainer > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
   height:300px;
 }
 
-.box-spacer {
-  background-color: white;
-}
 
 /*----end of: word game styles*/
 
@@ -1010,6 +1024,18 @@ ul#unusedLetters {
     background-color: #ffffff;
     border-radius: 10px;
     width: auto;
+  }
+
+  .box-2 {
+    background-color: #ffffff;
+    /* color: #d0ebff;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    margin: 14px 16px 14px 16px;
+    width: 50px;
+    text-decoration: none; */
+    border: 1px solid #292c7f;
+    border-radius: 10px;
   }
 
   #unusedLetters li  {
